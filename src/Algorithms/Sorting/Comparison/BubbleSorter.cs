@@ -1,7 +1,7 @@
 ﻿namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Class that implements bubble sort algorithm.
+/// Implements bubble sort algorithm.
 /// </summary>
 /// <typeparam name="T">Type of array element.</typeparam>
 public class BubbleSorter<T> : IComparisonSorter<T>
