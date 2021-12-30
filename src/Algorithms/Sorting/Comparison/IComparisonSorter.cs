@@ -5,6 +5,7 @@
 /// </summary>
 /// <typeparam name="T">Type of array item.</typeparam>
 public interface IComparisonSorter<T>
+    where T: IComparable<T>
 {
     /// <summary>
     /// Sorts array in ascending order.
