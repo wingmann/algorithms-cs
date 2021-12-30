@@ -6,7 +6,7 @@ namespace Algorithms.Sorting.Comparison;
 public static class InsertionSorter
 {
     /// <summary>
-    /// Sorts array using specified comparer, internal, in-place, stable.
+    /// Sorts array using specified comparer, internal, in-place, stable.<br/>
     /// Time complexity: O(n^2), space complexity: O(1), where n - array length.
     /// </summary>
     /// <param name="array">Array to sort.</param>

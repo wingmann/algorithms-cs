@@ -7,7 +7,7 @@ public static class BinaryInsertionSorter
 {
     /// <summary>
     /// Sorts array using specified comparer, variant of insertion sort where binary search is used to find
-    /// place for next element internal, in-place, unstable.
+    /// place for next element internal, in-place, unstable.<br/>
     /// Time complexity: O(n^2), space complexity: O(1), where n - array length.
     /// </summary>
     /// <param name="array">Array to sort.</param>

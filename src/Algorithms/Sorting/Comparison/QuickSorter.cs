@@ -6,7 +6,7 @@ namespace Algorithms.Sorting.Comparison;
 public abstract class QuickSorter
 {
     /// <summary>
-    /// Sorts array using Hoare partition scheme, internal, in-place.
+    /// Sorts array using Hoare partition scheme, internal, in-place.<br/>
     /// Time complexity average: O(n log(n)), time complexity worst: O(n^2), space complexity: O(log(n)),
     /// where n - array length.
     /// </summary>

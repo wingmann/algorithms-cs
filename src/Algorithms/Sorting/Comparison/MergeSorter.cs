@@ -7,7 +7,7 @@
 public static class MergeSorter
 {
     /// <summary>
-    /// Sorts array using merge sort algorithm, originally designed as external sorting algorithm, internal, stable.
+    /// Sorts array using merge sort algorithm, originally designed as external sorting algorithm, internal, stable.<br/>
     /// Time complexity: O(n log(n)), space complexity: O(n), where n - array length.
     /// </summary>
     /// <param name="array">Array to sort.</param>

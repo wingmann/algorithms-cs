@@ -6,7 +6,7 @@
 public static class BinarySearcher
 {
     /// <summary>
-    /// Finds index of item in array that equals to item searched for.
+    /// Finds index of item in array that equals to item searched for.<br/>
     /// Time complexity: O(log(n)), space complexity: O(1), where n - array size.
     /// </summary>
     /// <param name="sortedData">Sorted array to search in.</param>
