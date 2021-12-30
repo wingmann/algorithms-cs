@@ -4,9 +4,7 @@
 /// Divide and Conquer algorithm, which splits array in two halves, calls itself for the two halves and
 /// then merges the two sorted halves.
 /// </summary>
-/// <typeparam name="T">Type of array elements.</typeparam>
-public class MergeSorter<T> : IComparisonSorter<T>
-    where T : IComparable<T>
+public static class MergeSorter
 {
     /// <summary>
     /// Sorts array using merge sort algorithm, originally designed as external sorting algorithm, internal, stable.
@@ -14,7 +12,9 @@ public class MergeSorter<T> : IComparisonSorter<T>
     /// </summary>
     /// <param name="array">Array to sort.</param>
     /// <param name="comparer">Comparer to compare elements of <paramref name="array" />.</param>
-    public void Sort(T[] array, IComparer<T> comparer)
+    /// <typeparam name="T">Type of array elements.</typeparam>
+    public static void Sort<T>(T[] array, IComparer<T> comparer)
+        where T : IComparable<T>
     {
         if (array.Length <= 1)
         {
@@ -28,7 +28,8 @@ public class MergeSorter<T> : IComparisonSorter<T>
         Merge(array, left, right, comparer);
     }
     
-    private static void Merge(IList<T> array, IReadOnlyList<T> left, IReadOnlyList<T> right, IComparer<T> comparer)
+    private static void Merge<T>(IList<T> array, IReadOnlyList<T> left, IReadOnlyList<T> right, IComparer<T> comparer)
+        where T : IComparable<T>
     {
         var mainIndex = 0;
         var leftIndex = 0;
@@ -51,7 +52,8 @@ public class MergeSorter<T> : IComparisonSorter<T>
         }
     }
 
-    private static (T[] left, T[] right) Split(IReadOnlyCollection<T> array)
+    private static (T[] left, T[] right) Split<T>(IReadOnlyCollection<T> array)
+        where T : IComparable<T>
     {
         var mid = array.Count / 2;
         return (array.Take(mid).ToArray(), array.Skip(mid).ToArray());

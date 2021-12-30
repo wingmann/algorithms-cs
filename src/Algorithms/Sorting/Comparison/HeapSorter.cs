@@ -3,36 +3,35 @@
 /// <summary>
 /// Heap sort is a comparison based sorting technique based on Binary Heap data structure.
 /// </summary>
-/// <typeparam name="T">Input array type.</typeparam>
-public class HeapSorter<T> : IComparisonSorter<T>
-    where T : IComparable<T>
+public static class HeapSorter
 {
     /// <summary>
     /// Sorts input array using heap sort algorithm.
     /// </summary>
     /// <param name="array">Input array.</param>
     /// <param name="comparer">Comparer type for elements.</param>
-    public void Sort(T[] array, IComparer<T> comparer) => HeapSort(array, comparer);
-    
-    private static void HeapSort(IList<T> data, IComparer<T> comparer)
+    /// <typeparam name="T">Input array type.</typeparam>
+    public static void Sort<T>(IList<T> array, IComparer<T> comparer)
+        where T : IComparable<T>
     {
-        var heapSize = data.Count;
+        var heapSize = array.Count;
         
         for (var p = (heapSize - 1) / 2; p >= 0; p--)
         {
-            MakeHeap(data, heapSize, p, comparer);
+            MakeHeap(array, heapSize, p, comparer);
         }
 
-        for (var i = data.Count - 1; i > 0; i--)
+        for (var i = array.Count - 1; i > 0; i--)
         {
-            (data[i], data[0]) = (data[0], data[i]);
+            (array[i], array[0]) = (array[0], array[i]);
 
             heapSize--;
-            MakeHeap(data, heapSize, 0, comparer);
+            MakeHeap(array, heapSize, 0, comparer);
         }
     }
 
-    private static void MakeHeap(IList<T> input, int heapSize, int index, IComparer<T> comparer)
+    private static void MakeHeap<T>(IList<T> input, int heapSize, int index, IComparer<T> comparer)
+        where T : IComparable<T>
     {
         var rightIndex = index;
 

@@ -3,9 +3,7 @@
 /// <summary>
 /// Implements bubble sort algorithm.
 /// </summary>
-/// <typeparam name="T">Type of array element.</typeparam>
-public class BubbleSorter<T> : IComparisonSorter<T>
-    where T: IComparable<T>
+public static class BubbleSorter
 {
     /// <summary>
     /// Sorts array using specified comparer, internal, in-place, stable.
@@ -13,7 +11,9 @@ public class BubbleSorter<T> : IComparisonSorter<T>
     /// </summary>
     /// <param name="array">Array to sort.</param>
     /// <param name="comparer">Compares elements.</param>
-    public void Sort(T[] array, IComparer<T> comparer)
+    /// <typeparam name="T">Type of array element.</typeparam>
+    public static void Sort<T>(T[] array, IComparer<T> comparer)
+        where T : IComparable<T>
     {
         for (var i = 0; i < array.Length - 1; i++)
         {
