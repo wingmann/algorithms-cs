@@ -19,7 +19,7 @@ public static class BubbleSorterTests
 
         // Act.
         sorter.Sort(testArray, comparer);
-        Array.Sort(correctArray, comparer);
+        Array.Sort(correctArray);
 
         // Assert.
         Assert.AreEqual(testArray, correctArray);

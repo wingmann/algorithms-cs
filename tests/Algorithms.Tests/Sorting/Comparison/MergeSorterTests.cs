@@ -12,7 +12,7 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class MergeSorterTests
 {
     [Test]
-    public static void TestOnMergeSorter([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArray([Random(0, 1000, 100, Distinct = true)] int n)
     {
         // Arrange
         IComparisonSorter<int> sorter = new MergeSorter<int>();
@@ -22,7 +22,7 @@ public static class MergeSorterTests
 
         // Act
         sorter.Sort(testArray, comparer);
-        Array.Sort(correctArray, comparer);
+        Array.Sort(correctArray);
 
         // Assert
         Assert.AreEqual(correctArray, testArray);

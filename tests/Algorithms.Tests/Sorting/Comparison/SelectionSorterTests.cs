@@ -9,7 +9,7 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class SelectionSorterTests
 {
     [Test]
-    public static void ArraySorted([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArray([Random(0, 1000, 100, Distinct = true)] int n)
     {
         // Arrange
         IComparisonSorter<int> sorter = new SelectionSorter<int>();
@@ -19,7 +19,7 @@ public static class SelectionSorterTests
 
         // Act
         sorter.Sort(testArray, comparer);
-        Array.Sort(correctArray, comparer);
+        Array.Sort(correctArray);
 
         // Assert
         Assert.AreEqual(testArray, correctArray);
