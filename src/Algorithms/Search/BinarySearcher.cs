@@ -13,8 +13,7 @@ public static class BinarySearcher
     /// <param name="item">Item to search for.</param>
     /// <typeparam name="T">Type of array item.</typeparam>
     /// <returns>Index of item that equals to item searched for or -1 if none found.</returns>
-    public static int FindIndex<T>(T[] sortedData, T item)
-        where T : IComparable<T>
+    public static int FindIndex<T>(T[] sortedData, T item) where T : IComparable<T>
     {
         var leftIndex = 0;
         var rightIndex = sortedData.Length - 1;

@@ -11,13 +11,14 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class MergeSorterTests
 {
     [Test]
-    public static void SortArray([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArrays([Random(0, 1000, 100, Distinct = true)] int n)
     {
         // Arrange
+        IComparisonSorter sorter = new MergeSorter();
         var (correctArray, testArray) = RandomHelper.GetArrays(n);
 
         // Act
-        MergeSorter.Sort(testArray, new IntegralComparer());
+        sorter.Sort(testArray, new IntegralComparer());
         Array.Sort(correctArray);
 
         // Assert

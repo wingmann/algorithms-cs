@@ -3,7 +3,7 @@
 /// <summary>
 /// Heap sort is a comparison based sorting technique based on Binary Heap data structure.
 /// </summary>
-public static class HeapSorter
+public class HeapSorter : IComparisonSorter
 {
     /// <summary>
     /// Sorts input array using heap sort algorithm.
@@ -11,17 +11,16 @@ public static class HeapSorter
     /// <param name="array">Input array.</param>
     /// <param name="comparer">Comparer type for elements.</param>
     /// <typeparam name="T">Input array type.</typeparam>
-    public static void Sort<T>(IList<T> array, IComparer<T> comparer)
-        where T : IComparable<T>
+    public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
-        var heapSize = array.Count;
+        var heapSize = array.Length;
         
         for (var p = (heapSize - 1) / 2; p >= 0; p--)
         {
             MakeHeap(array, heapSize, p, comparer);
         }
 
-        for (var i = array.Count - 1; i > 0; i--)
+        for (var i = array.Length - 1; i > 0; i--)
         {
             (array[i], array[0]) = (array[0], array[i]);
 
@@ -39,10 +38,10 @@ public static class HeapSorter
         {
             var right = (rightIndex + 1) * 2;
             var left = right - 1;
-            var largest = left < heapSize && comparer.Compare(input[left], input[rightIndex]) == 1 ? left : rightIndex;
+            var largest = left < heapSize && comparer.Compare(input[left], input[rightIndex]) is 1 ? left : rightIndex;
 
             // Finds the index of the largest.
-            if (right < heapSize && comparer.Compare(input[right], input[largest]) == 1)
+            if (right < heapSize && comparer.Compare(input[right], input[largest]) is 1)
             {
                 largest = right;
             }

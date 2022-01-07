@@ -3,7 +3,7 @@ namespace Algorithms.Sorting.Comparison;
 /// <summary>
 /// Implements binary insertion sort algorithm.
 /// </summary>
-public static class BinaryInsertionSorter
+public class BinaryInsertionSorter : IComparisonSorter
 {
     /// <summary>
     /// Sorts array using specified comparer, variant of insertion sort where binary search is used to find
@@ -13,8 +13,7 @@ public static class BinaryInsertionSorter
     /// <param name="array">Array to sort.</param>
     /// <param name="comparer">Compares elements.</param>
     /// <typeparam name="T">Type of array item.</typeparam>
-    public static void Sort<T>(T[] array, IComparer<T> comparer)
-        where T : IComparable<T>
+    public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         for (var i = 1; i < array.Length; i++)
         {
@@ -32,6 +31,7 @@ public static class BinaryInsertionSorter
     {
         var left = from;
         var right = to;
+        
         while (right > left)
         {
             var middle = (left + right) / 2;

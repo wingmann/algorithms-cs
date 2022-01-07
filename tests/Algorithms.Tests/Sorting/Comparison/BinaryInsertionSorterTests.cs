@@ -8,13 +8,14 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class BinaryInsertionSorterTests
 {
     [Test]
-    public static void SortArray([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArrays([Random(0, 1000, 100, Distinct = true)] int n)
     {
         // Arrange
+        IComparisonSorter sorter = new BinaryInsertionSorter();
         var (correctArray, testArray) = RandomHelper.GetArrays(n);
 
         // Act
-        BinaryInsertionSorter.Sort(testArray, new IntegralComparer());
+        sorter.Sort(testArray, new IntegralComparer());
         Array.Sort(correctArray);
 
         // Assert

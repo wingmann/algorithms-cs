@@ -1,7 +1,7 @@
 ﻿namespace Algorithms.Search;
 
 /// <summary>
-/// Implements recursive binary searcher.
+/// Implements recursive binary search algorithm.
 /// </summary>
 public static class RecursiveBinarySearcher
 {
@@ -11,11 +11,9 @@ public static class RecursiveBinarySearcher
     /// </summary>
     /// <param name="collection">Sorted collection to search in.</param>
     /// <param name="item">Item to search for.</param>
-    /// <exception cref="ArgumentNullException">Thrown if input collection is null.</exception>
     /// <typeparam name="T">Type of collection item.</typeparam>
     /// <returns>Index of item that equals to item searched for or -1 if none found.</returns>
-    public static int FindIndex<T>(IList<T>? collection, T item)
-        where T : IComparable<T>
+    public static int FindIndex<T>(IList<T>? collection, T item) where T : IComparable<T>
     {
         if (collection is null)
         {
@@ -27,7 +25,7 @@ public static class RecursiveBinarySearcher
 
         return FindIndex(collection, item, leftIndex, rightIndex);
     }
-    
+
     private static int FindIndex<T>(IList<T> collection, T item, int leftIndex, int rightIndex)
         where T : IComparable<T>
     {

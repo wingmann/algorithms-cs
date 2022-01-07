@@ -3,7 +3,7 @@
 /// <summary>
 /// Implements selection sort algorithm.
 /// </summary>
-public static class SelectionSorter
+public class SelectionSorter : IComparisonSorter
 {
     /// <summary>
     /// Sorts array using specified comparer, internal, in-place, stable.<br/>
@@ -12,8 +12,7 @@ public static class SelectionSorter
     /// <param name="array">Array to sort.</param>
     /// <param name="comparer">Compares elements.</param>
     /// <typeparam name="T">Type of array element.</typeparam>
-    public static void Sort<T>(T[] array, IComparer<T> comparer)
-        where T : IComparable<T>
+    public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         for (var i = 0; i < array.Length - 1; i++)
         {

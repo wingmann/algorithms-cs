@@ -8,13 +8,14 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class SelectionSorterTests
 {
     [Test]
-    public static void SortArray([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArrays([Random(0, 1000, 100, Distinct = true)] int n)
     {
         // Arrange
+        IComparisonSorter sorter = new SelectionSorter();
         var (correctArray, testArray) = RandomHelper.GetArrays(n);
 
         // Act
-        SelectionSorter.Sort(testArray, new IntegralComparer());
+        sorter.Sort(testArray, new IntegralComparer());
         Array.Sort(correctArray);
 
         // Assert
