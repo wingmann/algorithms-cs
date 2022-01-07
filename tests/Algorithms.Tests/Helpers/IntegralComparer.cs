@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Algorithms.Tests.Helpers;
+﻿namespace Algorithms.Tests.Helpers;
 
 public class IntegralComparer : IComparer<int>
 {

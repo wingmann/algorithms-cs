@@ -1,7 +1,6 @@
 ﻿using Algorithms.Sorting.Comparison;
 using Algorithms.Tests.Helpers;
 using NUnit.Framework;
-using System;
 
 namespace Algorithms.Tests.Sorting.Comparison;
 

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Linq;
-using Algorithms.Search;
+﻿using Algorithms.Search;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
 
@@ -9,7 +7,7 @@ namespace Algorithms.Tests.Search;
 public static class BinarySearcherTests
 {
     [Test]
-    public static void FindIndex_ItemPresent_IndexCorrect([Random(1, 1000, 100)] int n)
+    public static void FindIndex_ItemPresent_IndexCorrect([Random(1, 1_000, 100)] int n)
     {
         // Arrange.
         var random = Randomizer.CreateRandomizer();
@@ -25,13 +23,13 @@ public static class BinarySearcherTests
 
     [Test]
     public static void FindIndex_ItemMissing_MinusOneReturned(
-        [Random(0, 1000, 10)] int n,
-        [Random(-100, 1100, 10)] int missingItem)
+        [Random(0, 1_000, 10)] int n,
+        [Random(-100, 1_100, 10)] int missingItem)
     {
         // Arrange.
         var random = Randomizer.CreateRandomizer();
         var arrayToSearch = Enumerable.Range(0, n)
-            .Select(x => random.Next(0, 1000))
+            .Select(x => random.Next(0, 1_000))
             .Where(x => x != missingItem)
             .OrderBy(x => x).ToArray();
 

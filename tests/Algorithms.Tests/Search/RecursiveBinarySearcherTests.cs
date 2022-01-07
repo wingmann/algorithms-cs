@@ -1,21 +1,18 @@
 ﻿using Algorithms.Search;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Algorithms.Tests.Search;
 
 public static class RecursiveBinarySearcherTests
 {
     [Test]
-    public static void FindIndex_ItemPresent_IndexCorrect([Random(1, 1000, 100)] int n)
+    public static void FindIndex_ItemPresent_IndexCorrect([Random(1, 1_000, 100)] int n)
     {
         // Arrange.
         var randomizer = Randomizer.CreateRandomizer();
         var selectedIndex = randomizer.Next(0, n);
-        var collection = Enumerable.Range(0, n).Select(x => randomizer.Next(0, 1000)).OrderBy(x => x).ToList();
+        var collection = Enumerable.Range(0, n).Select(x => randomizer.Next(0, 1_000)).OrderBy(x => x).ToList();
 
         // Act.
         var actualIndex = RecursiveBinarySearcher.FindIndex(collection, collection[selectedIndex]);
@@ -26,13 +23,14 @@ public static class RecursiveBinarySearcherTests
 
     [Test]
     public static void FindIndex_ItemMissing_MinusOneReturned(
-        [Random(0, 1000, 10)] int n,
-        [Random(-100, 1100, 10)] int missingItem)
+        [Random(0, 1_000, 10)] int n,
+        [Random(-100, 1_100, 10)] int missingItem)
     {
         // Arrange.
         var random = Randomizer.CreateRandomizer();
-        var collection = Enumerable.Range(0, n)
-            .Select(x => random.Next(0, 1000))
+        var collection = Enumerable
+            .Range(0, n)
+            .Select(x => random.Next(0, 1_000))
             .Where(x => x != missingItem)
             .OrderBy(x => x).ToList();
 
