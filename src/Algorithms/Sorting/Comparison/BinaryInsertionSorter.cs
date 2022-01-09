@@ -27,7 +27,6 @@ public class BinaryInsertionSorter : IComparisonSorter
     }
     
     private static int BinarySearch<T>(IReadOnlyList<T> array, int from, int to, T target, IComparer<T> comparer)
-        where T : IComparable<T>
     {
         var left = from;
         var right = to;

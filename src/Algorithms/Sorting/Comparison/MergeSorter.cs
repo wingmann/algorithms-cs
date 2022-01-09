@@ -28,7 +28,6 @@ public class MergeSorter : IComparisonSorter
     }
     
     private static void Merge<T>(IList<T> array, IReadOnlyList<T> left, IReadOnlyList<T> right, IComparer<T> comparer)
-        where T : IComparable<T>
     {
         var mainIndex = 0;
         var leftIndex = 0;
@@ -51,7 +50,7 @@ public class MergeSorter : IComparisonSorter
         }
     }
 
-    private static (T[] left, T[] right) Split<T>(IReadOnlyCollection<T> array) where T : IComparable<T>
+    private static (T[] left, T[] right) Split<T>(IReadOnlyCollection<T> array)
     {
         var middle = array.Count / 2;
         return (array.Take(middle).ToArray(), array.Skip(middle).ToArray());

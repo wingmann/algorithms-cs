@@ -30,7 +30,6 @@ public class HeapSorter : IComparisonSorter
     }
 
     private static void MakeHeap<T>(IList<T> input, int heapSize, int index, IComparer<T> comparer)
-        where T : IComparable<T>
     {
         var rightIndex = index;
 

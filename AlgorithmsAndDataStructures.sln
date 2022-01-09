@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms", "src\Algorithm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Tests", "tests\Algorithms.Tests\Algorithms.Tests.csproj", "{A1DA3193-ED8B-4C21-9C89-639C04128C78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "src\Utilities\Utilities.csproj", "{064BA0A7-5AFB-45ED-B837-E2559D54BB84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A1DA3193-ED8B-4C21-9C89-639C04128C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DA3193-ED8B-4C21-9C89-639C04128C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DA3193-ED8B-4C21-9C89-639C04128C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064BA0A7-5AFB-45ED-B837-E2559D54BB84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064BA0A7-5AFB-45ED-B837-E2559D54BB84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064BA0A7-5AFB-45ED-B837-E2559D54BB84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064BA0A7-5AFB-45ED-B837-E2559D54BB84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

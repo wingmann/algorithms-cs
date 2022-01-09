@@ -16,7 +16,7 @@ public abstract class QuickSorter : IComparisonSorter
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T> =>
         Sort(array, comparer, 0, array.Length - 1);
 
-    protected abstract T SelectPivot<T>(T[] array, IComparer<T> comparer, int left, int right) where T : IComparable<T>;
+    protected abstract T SelectPivot<T>(T[] array, IComparer<T> comparer, int left, int right);
 
     private void Sort<T>(T[] array, IComparer<T> comparer, int left, int right) where T : IComparable<T>
     {
@@ -34,7 +34,7 @@ public abstract class QuickSorter : IComparisonSorter
         }
     }
 
-    private int Partition<T>(T[] array, IComparer<T> comparer, int leftInput, int rightInput) where T : IComparable<T>
+    private int Partition<T>(T[] array, IComparer<T> comparer, int leftInput, int rightInput)
     {
         var pivot = SelectPivot(array, comparer, leftInput, rightInput);
         var left = leftInput;

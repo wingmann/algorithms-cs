@@ -17,7 +17,7 @@ public static class LinearSearcherTests
 
         // Act.
         var expectedItem = Array.Find(arrayToSearch, x => x == arrayToSearch[n / 2]);
-        var actualItem = searcher.Find(arrayToSearch, x => x == arrayToSearch[n / 2]);
+        var actualItem = LinearSearcher.Find(arrayToSearch, x => x == arrayToSearch[n / 2]);
 
         // Assert.
         Assert.AreEqual(expectedItem, actualItem);
@@ -33,7 +33,7 @@ public static class LinearSearcherTests
 
         // Act.
         var expectedIndex = Array.FindIndex(arrayToSearch, x => x == arrayToSearch[n / 2]);
-        var actualIndex = searcher.FindIndex(arrayToSearch, x => x == arrayToSearch[n / 2]);
+        var actualIndex = LinearSearcher.FindIndex(arrayToSearch, x => x == arrayToSearch[n / 2]);
 
         // Assert.
         Assert.AreEqual(expectedIndex, actualIndex);
@@ -48,7 +48,7 @@ public static class LinearSearcherTests
         var arrayToSearch = Enumerable.Range(0, n).Select(_ => random.Next(0, 1_000)).ToArray();
 
         // Assert.
-        _ = Assert.Throws<ItemNotFoundException>(() => searcher.Find(arrayToSearch, _ => false));
+        _ = Assert.Throws<ItemNotFoundException>(() => LinearSearcher.Find(arrayToSearch, _ => false));
     }
 
     [Test]
@@ -60,7 +60,7 @@ public static class LinearSearcherTests
         var arrayToSearch = Enumerable.Range(0, n).Select(_ => random.Next(0, 1_000)).ToArray();
 
         // Act.
-        var actualIndex = searcher.FindIndex(arrayToSearch, _ => false);
+        var actualIndex = LinearSearcher.FindIndex(arrayToSearch, _ => false);
 
         // Assert.
         Assert.AreEqual(-1, actualIndex);
