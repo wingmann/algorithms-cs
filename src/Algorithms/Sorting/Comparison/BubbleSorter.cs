@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Sorting.Comparison;
+﻿using Algorithms.Sorting.Comparison.Interfaces;
+
+namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements bubble sort algorithm.

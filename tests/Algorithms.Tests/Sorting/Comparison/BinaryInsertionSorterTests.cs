@@ -1,4 +1,5 @@
 using Algorithms.Sorting.Comparison;
+using Algorithms.Sorting.Comparison.Interfaces;
 using Algorithms.Tests.Helpers;
 using NUnit.Framework;
 

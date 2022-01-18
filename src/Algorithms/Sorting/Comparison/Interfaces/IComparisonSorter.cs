@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Comparison;
+﻿namespace Algorithms.Sorting.Comparison.Interfaces;
 
 public interface IComparisonSorter
 {

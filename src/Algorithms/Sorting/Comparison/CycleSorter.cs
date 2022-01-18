@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Sorting.Comparison;
+﻿using Algorithms.Sorting.Comparison.Interfaces;
+
+namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Cycle sort is an in-place, unstable sorting algorithm, a comparison sort that is theoretically optimal in

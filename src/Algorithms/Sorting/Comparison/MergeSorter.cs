@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Sorting.Comparison;
+﻿using Algorithms.Sorting.Comparison.Interfaces;
+
+namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Divide and Conquer algorithm, which splits array in two halves, calls itself for the two halves and
