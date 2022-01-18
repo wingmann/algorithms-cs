@@ -7,7 +7,7 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class SelectionSorterTests
 {
     [Test]
-    public static void SortArrays([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArrays([Random(0, 1_000, 100, Distinct = true)] int n)
     {
         // Arrange
         IComparisonSorter sorter = new SelectionSorter();

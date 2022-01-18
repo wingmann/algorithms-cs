@@ -4,23 +4,20 @@ using NUnit.Framework;
 
 namespace Algorithms.Tests.Sorting.Comparison;
 
-/// <summary>
-/// Class for testing merge sorter algorithm.
-/// </summary>
-public static class MergeSorterTests
+public static class MiddlePointQuickSorterTests
 {
     [Test]
     public static void SortArrays([Random(0, 1_000, 100, Distinct = true)] int n)
     {
-        // Arrange
-        IComparisonSorter sorter = new MergeSorter();
+        // Arrange.
+        IComparisonSorter sorter = new MiddlePointQuickSorter();
         var (correctArray, testArray) = RandomHelper.GetArrays(n);
 
-        // Act
+        // Act.
         sorter.Sort(testArray, new IntegralComparer());
         Array.Sort(correctArray);
 
-        // Assert
-        Assert.AreEqual(correctArray, testArray);
+        // Assert.
+        Assert.AreEqual(testArray, correctArray);
     }
 }
