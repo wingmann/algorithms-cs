@@ -1,6 +1,6 @@
 ﻿using Algorithms.Sorting.Comparison.Interfaces;
 
-namespace Algorithms.Sorting.Comparison;
+namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Comb sort is a relatively simple sorting algorithm that improves on bubble sort.

@@ -1,6 +1,6 @@
 ﻿using Algorithms.Sorting.Comparison.Interfaces;
 
-namespace Algorithms.Sorting.Comparison;
+namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements shell sort algorithm.
