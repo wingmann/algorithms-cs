@@ -7,7 +7,7 @@ namespace Algorithms.Tests.Sorting.Comparison;
 public static class TimSorterTests
 {
     [Test]
-    public static void SortArrays([Random(0, 1000, 100, Distinct = true)] int n)
+    public static void SortArrays([Random(0, 1_000, 100, Distinct = true)] int n)
     {
         // Arrange.
         TimSorter sorter = new();
@@ -22,12 +22,12 @@ public static class TimSorterTests
     }
 
     [Test]
-    public static void TinyArray()
+    public static void SortTinyArray()
     {
         // Arrange.
         TimSorter sorter = new();
-        var tinyArray = new[] {1};
-        var correctArray = new[] {1};
+        var tinyArray = new[] { 1 };
+        var correctArray = new[] { 1 };
 
         // Act.
         sorter.Sort(tinyArray, new IntegralComparer());
@@ -37,7 +37,7 @@ public static class TimSorterTests
     }
 
     [Test]
-    public static void SmallChunks()
+    public static void SortArray_WithSmallChunks()
     {
         // Arrange.
         TimSorter sorter = new();
