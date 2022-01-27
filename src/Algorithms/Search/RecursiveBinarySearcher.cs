@@ -6,7 +6,7 @@
 public static class RecursiveBinarySearcher
 {
     /// <summary>
-    /// Finds index of item in collection that equals to item searched for.<br/>
+    /// Finds index of item in collection that equals to item searched for.
     /// Time complexity: O(log(n)), space complexity: O(1), where n - collection size.
     /// </summary>
     /// <param name="collection">Sorted collection to search in.</param>

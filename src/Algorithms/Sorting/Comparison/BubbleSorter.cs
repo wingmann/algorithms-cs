@@ -8,7 +8,7 @@ namespace Algorithms.Sorting.Comparison;
 public class BubbleSorter : IComparisonSorter
 {
     /// <summary>
-    /// Sorts array using specified comparer, internal, in-place, stable.<br/>
+    /// Sorts array using specified comparer, internal, in-place, stable.
     /// Time complexity: O(n^2), space complexity: O(1), where n - array length.
     /// </summary>
     /// <param name="array">Array to sort.</param>

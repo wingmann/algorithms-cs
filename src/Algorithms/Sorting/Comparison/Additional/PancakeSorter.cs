@@ -38,7 +38,7 @@ public class PancakeSorter : IComparisonSorter
         }
     }
 
-    // Reverses array[0..i]
+    // Reverses array[0..i].
     private static void Flip<T>(IList<T> array, int i)
     {
         var start = 0;
