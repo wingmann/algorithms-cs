@@ -9,15 +9,15 @@ public static class CountingSorterTests
     [Test]
     public static void SortArrays([Random(1, 10_000, 100, Distinct = true)] int n)
     {
-        // Arrange
+        // Arrange.
         CountingSorter sorter = new();
         var (correctArray, testArray) = RandomHelper.GetArrays(n);
 
-        // Act
+        // Act.
         sorter.Sort(testArray);
         Array.Sort(correctArray);
 
-        // Assert
+        // Assert.
         Assert.AreEqual(correctArray, testArray);
     }
 
