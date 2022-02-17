@@ -12,11 +12,11 @@ public class LinearSearcher
     /// <param name="data">Array to search in.</param>
     /// <param name="term">Term to check against.</param>
     /// <typeparam name="T">Type of array element.</typeparam>
-    /// <exception cref="ItemNotFoundException"></exception>
+    /// <exception cref="ApplicationException"></exception>
     /// <returns>First item that satisfies term.</returns>
-    public static T Find<T>(T[] data, Func<T, bool> term)
+    public static T Find<T>(IEnumerable<T> data, Func<T, bool> term)
     {
-        foreach (T t in data)
+        foreach (var t in data)
         {
             if (term(t))
             {

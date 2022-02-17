@@ -134,6 +134,7 @@ public class DoublyLinkedList<T>
     public IEnumerable<T> GetData()
     {
         var current = _head;
+        
         while (current is not null)
         {
             yield return current.Data;
@@ -148,6 +149,7 @@ public class DoublyLinkedList<T>
     public IEnumerable<T> GetDataReversed()
     {
         var current = _tail;
+        
         while (current is not null)
         {
             yield return current.Data;
@@ -188,12 +190,13 @@ public class DoublyLinkedList<T>
     public DoublyNode<T> Find(T data)
     {
         var current = _head;
+        
         while (current is not null)
         {
-            var noValue = current.Data is null && data is null;
-            var matched = current.Data is not null && current.Data.Equals(data);
+            var condition = current.Data is null && data is null ||
+                            current.Data is not null && current.Data.Equals(data);
             
-            if (noValue || matched)
+            if (condition)
             {
                 return current;
             }
@@ -238,6 +241,7 @@ public class DoublyLinkedList<T>
         }
 
         _head = _head.Next;
+        
         if (_head is null)
         {
             _tail = null;
@@ -260,6 +264,7 @@ public class DoublyLinkedList<T>
         }
 
         _tail = _tail.Previous;
+        
         if (_tail is null)
         {
             _head = null;
@@ -296,6 +301,7 @@ public class DoublyLinkedList<T>
 
         node.Previous.Next = node.Next;
         node.Next.Previous = node.Previous;
+        
         Count--;
     }
 
@@ -321,10 +327,10 @@ public class DoublyLinkedList<T>
         
         while (current is not null)
         {
-            var noValue = current.Data is null && data is null;
-            var equals = current.Data is not null && current.Data.Equals(data);
+            var condition = current.Data is null && data is null ||
+                            current.Data is not null && current.Data.Equals(data);
             
-            if (noValue || equals)
+            if (condition)
             {
                 return index;
             }
