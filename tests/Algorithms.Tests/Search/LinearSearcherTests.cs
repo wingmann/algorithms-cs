@@ -1,7 +1,6 @@
 ﻿using Algorithms.Search;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
-using Utilities.Exceptions;
 
 namespace Algorithms.Tests.Search;
 
@@ -48,7 +47,7 @@ public static class LinearSearcherTests
         var arrayToSearch = Enumerable.Range(0, n).Select(_ => random.Next(0, 1_000)).ToArray();
 
         // Assert.
-        _ = Assert.Throws<ItemNotFoundException>(() => LinearSearcher.Find(arrayToSearch, _ => false));
+        _ = Assert.Throws<ApplicationException>(() => LinearSearcher.Find(arrayToSearch, _ => false));
     }
 
     [Test]

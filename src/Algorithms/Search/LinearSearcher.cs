@@ -1,6 +1,4 @@
-﻿using Utilities.Exceptions;
-
-namespace Algorithms.Search;
+﻿namespace Algorithms.Search;
 
 /// <summary>
 /// Implements linear search algorithm.
@@ -26,7 +24,7 @@ public class LinearSearcher
             }
         }
 
-        throw new ItemNotFoundException();
+        throw new ApplicationException("Item not found.");
     }
     
     /// <summary>

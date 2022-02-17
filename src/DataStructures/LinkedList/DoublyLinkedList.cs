@@ -1,5 +1,4 @@
 ﻿using DataStructures.LinkedList.Internal;
-using Utilities.Exceptions;
 
 namespace DataStructures.LinkedList;
 
@@ -202,7 +201,7 @@ public class DoublyLinkedList<T>
             current = current.Next;
         }
 
-        throw new ItemNotFoundException();
+        throw new ApplicationException("Item not found.");
     }
 
     /// <summary>
