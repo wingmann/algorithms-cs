@@ -10,6 +10,7 @@ public static class VectorExtensions
     public static double[] Copy(this double[] vector)
     {
         var result = new double[vector.Length];
+        
         for (var i = 0; i < vector.Length; i++)
         {
             result[i] = vector[i];

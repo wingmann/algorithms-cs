@@ -1,12 +1,11 @@
 ﻿namespace Algorithms.Search;
 
 /// <summary>
-/// The idea: you could combine the advantages from both binary-search and interpolation search algorithm.
+/// Combine the advantages from both binary-search and interpolation search algorithm.
 /// Time complexity:
-///     worst case: Item couldn't be found: O(log n),
-///     average case: O(log log n),
-///     best case: O(1).
-/// Note: This algorithm is recursive and the array has to be sorted beforehand.
+/// Worst case: Item couldn't be found: O(log n), average case: O(log log n), best case: O(1).
+/// Note:
+/// This algorithm is recursive and the array has to be sorted beforehand.
 /// </summary>
 public static class FastSearcher
 {
@@ -43,8 +42,8 @@ public static class FastSearcher
     private static (int left, int right) ComputeIndices(Span<int> array, int item)
     {
         var indexBinary = array.Length / 2;
-
-        int[] section =
+        
+        var section = new[]
         {
             array.Length - 1,
             item - array[0],
