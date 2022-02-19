@@ -11,7 +11,7 @@
 /// https://www.inf.hs-flensburg.de/lang/algorithmen/pattern/bmen.htm
 /// https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm.
 /// </summary>
-public class BoyerMoore
+public static class BoyerMoore
 {
     /// <summary>
     /// Finds the index of the first occurrence of the pattern p in t.

@@ -13,11 +13,11 @@ public static class KmpSearcherTests
         const string pattern = "ABA";
 
         // Act.
-        var expectedItem = new[] { 0, 2, 8 };
-        var actualItem = KmpSearcher.FindIndexes(data, pattern);
+        var expected = new[] { 0, 2, 8 };
+        var actual = KmpSearcher.FindIndexes(data, pattern);
 
         // Assert.
-        CollectionAssert.AreEqual(expectedItem, actualItem);
+        CollectionAssert.AreEqual(expected, actual);
     }
 
     [Test]
