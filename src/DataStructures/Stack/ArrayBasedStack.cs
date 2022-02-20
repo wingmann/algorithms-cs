@@ -1,11 +1,12 @@
 ﻿namespace DataStructures.Stack;
 
 /// <summary>
-/// Implements array-based stack with LIFO style.
+/// Implements array-based stack.
+/// <typeparam name="T">Generic type.</typeparam>
 /// </summary>
 public class ArrayBasedStack<T>
 {
-    private const int DefaultCapacity = 10;
+    private static int DefaultCapacity => 10;
 
     /// <summary>
     /// <see cref="Array" /> based stack.

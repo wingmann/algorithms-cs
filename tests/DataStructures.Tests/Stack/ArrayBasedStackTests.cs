@@ -102,7 +102,6 @@ public static class ArrayBasedStackTests
             .Should()
             .Throw<InvalidOperationException>()
             .WithMessage("Stack is empty");
-
     }
 
     [Test]
