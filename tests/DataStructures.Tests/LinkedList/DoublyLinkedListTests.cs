@@ -29,7 +29,7 @@ public static class DoublyLinkedListTests
         var values = new[]
         {
             list.GetAt(1),
-            list.GetAt(3)
+            list.GetAt(3),
         };
 
         // Assert.
@@ -87,7 +87,7 @@ public static class DoublyLinkedListTests
         var values = new[]
         {
             list.Find(1),
-            list.Find(3)
+            list.Find(3),
         };
 
         // Assert.
@@ -105,7 +105,7 @@ public static class DoublyLinkedListTests
         var values = new[]
         {
             list.IndexOf(1),
-            list.IndexOf(3)
+            list.IndexOf(3),
         };
 
         // Assert.
@@ -123,7 +123,7 @@ public static class DoublyLinkedListTests
         var values = new[]
         {
             list.Contains(1),
-            list.Contains(6)
+            list.Contains(6),
         };
 
         // Assert.

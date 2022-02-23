@@ -47,7 +47,7 @@ public static class VectorExtensions
     /// <param name="rhs">The RHS vector.</param>
     /// <returns>The dot product of the two vector.</returns>
     /// <exception cref="ArgumentException">Dimensions of vectors do not match.</exception>
-    private static double Dot(this IReadOnlyCollection<double> lhs, IReadOnlyList<double> rhs)
+    public static double Dot(this IReadOnlyCollection<double> lhs, IReadOnlyList<double> rhs)
     {
         if (lhs.Count != rhs.Count)
         {

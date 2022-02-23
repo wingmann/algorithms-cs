@@ -90,7 +90,7 @@ public static class SinglyLinkedListTests
             [3] = testObj.DeleteElement("L"),
             [4] = testObj.DeleteElement("L"),
             [5] = testObj.DeleteElement("L"),
-            [6] = testObj.DeleteElement("F")
+            [6] = testObj.DeleteElement("F"),
         };
         
         var result = $"{testObj.GetElementByIndex(0)}{testObj.GetElementByIndex(1)}";

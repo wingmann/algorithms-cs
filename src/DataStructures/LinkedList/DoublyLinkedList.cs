@@ -112,7 +112,7 @@ public class DoublyLinkedList<T>
         DoublyNode<T> node = new(data)
         {
             Next = existingNode.Next,
-            Previous = existingNode
+            Previous = existingNode,
         };
         
         existingNode.Next = node;
