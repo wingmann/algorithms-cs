@@ -1,4 +1,6 @@
-﻿namespace Algorithms.Search;
+﻿using Algorithms.Search.Interfaces;
+
+namespace Algorithms.Search;
 
 /// <summary>
 /// Implements linear search algorithm.

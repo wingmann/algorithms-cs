@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Search;
+﻿namespace Algorithms.Search.Interfaces;
 
 /// <summary>
 /// Common interface of most search algorithms.

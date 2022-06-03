@@ -10,5 +10,7 @@ public interface ISequence
     /// <summary>
     /// Gets sequence as enumerable.
     /// </summary>
-    IEnumerable<BigInteger> Sequence { get; }
+    /// <param name="limit">Upper bound generation limit.</param>
+    /// <returns>Sequence of integer values.</returns>
+    IEnumerable<BigInteger> Generate(int limit);
 }
