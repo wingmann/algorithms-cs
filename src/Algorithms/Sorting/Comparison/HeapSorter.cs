@@ -3,7 +3,7 @@
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Heap sort is a comparison based sorting technique based on Binary Heap data structure.
+/// Heap sort is a comparison based sorting technique based on binary heap data structure.
 /// </summary>
 public class HeapSorter : IComparisonSorter
 {

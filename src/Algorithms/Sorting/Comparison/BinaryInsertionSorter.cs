@@ -4,17 +4,12 @@ namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements binary insertion sort algorithm.
+/// <see href="https://en.wikipedia.org/wiki/Binary_search_algorithm"/>
+/// <see href="https://en.wikipedia.org/wiki/Insertion_sort"/>
 /// </summary>
 public class BinaryInsertionSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts array using specified comparer, variant of insertion sort where binary search is used to find
-    /// place for next element internal, in-place, unstable.
-    /// Time complexity: O(n^2), space complexity: O(1), where n - array length.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array item.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}"/>
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         for (var i = 1; i < array.Length; i++)
