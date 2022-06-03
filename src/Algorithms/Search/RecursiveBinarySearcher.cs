@@ -1,32 +1,26 @@
-﻿namespace Algorithms.Search;
+﻿using Algorithms.Search.Interfaces;
+
+namespace Algorithms.Search;
 
 /// <summary>
-/// Implements recursive binary search algorithm.
+/// Recursive binary search algorithm.
 /// </summary>
-public static class RecursiveBinarySearcher
+public class RecursiveBinarySearcher : ISearchAlgorithm
 {
     /// <summary>
-    /// Finds index of item in collection that equals to item searched for.
-    /// Time complexity: O(log(n)), space complexity: O(1), where n - collection size.
+    /// Finds the index of first occurrence of the target item.
     /// </summary>
-    /// <param name="collection">Sorted collection to search in.</param>
-    /// <param name="item">Item to search for.</param>
-    /// <typeparam name="T">Type of collection item.</typeparam>
-    /// <returns>Index of item that equals to item searched for or -1 if none found.</returns>
-    public static int FindIndex<T>(IList<T>? collection, T item) where T : IComparable<T>
+    /// <param name="data">Array where the element should be found.</param>
+    /// <param name="item">Element which should be found.</param>
+    /// <typeparam name="T">Comparable type.</typeparam>
+    /// <returns>Index of the first occurrence of the target element, or -1 if it is not found.</returns>
+    public int FindIndex<T>(T[] data, T item) where T : IComparable<T> => data.Length switch
     {
-        if (collection is null)
-        {
-            throw new ArgumentNullException(nameof(collection));
-        }
+        0 => -1,
+        _ => FindIndex(data, item, 0, data.Length - 1),
+    };
 
-        const int leftIndex = 0;
-        var rightIndex = collection.Count - 1;
-
-        return FindIndex(collection, item, leftIndex, rightIndex);
-    }
-
-    private static int FindIndex<T>(IList<T> collection, T item, int leftIndex, int rightIndex)
+    private static int FindIndex<T>(IReadOnlyList<T> data, T item, int leftIndex, int rightIndex)
         where T : IComparable<T>
     {
         if (leftIndex > rightIndex)
@@ -35,13 +29,13 @@ public static class RecursiveBinarySearcher
         }
 
         var middleIndex = leftIndex + (rightIndex - leftIndex) / 2;
-        var result = item.CompareTo(collection[middleIndex]);
+        var result = item.CompareTo(data[middleIndex]);
 
         return result switch
         {
             0 => middleIndex,
-            > 0 => FindIndex(collection, item, middleIndex + 1, rightIndex),
-            < 0 => FindIndex(collection, item, leftIndex, middleIndex - 1),
+            > 0 => FindIndex(data, item, middleIndex + 1, rightIndex),
+            < 0 => FindIndex(data, item, leftIndex, middleIndex - 1),
         };
     }
 }

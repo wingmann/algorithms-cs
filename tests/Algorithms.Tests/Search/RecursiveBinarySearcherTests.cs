@@ -9,16 +9,18 @@ public static class RecursiveBinarySearcherTests
     [Test]
     public static void FindIndex_ItemPresent_IndexCorrect([Random(1, 1_000, 100)] int n)
     {
-        // Arrange.
         var randomizer = Randomizer.CreateRandomizer();
         var selectedIndex = randomizer.Next(0, n);
-        var collection = Enumerable.Range(0, n).Select(x => randomizer.Next(0, 1_000)).OrderBy(x => x).ToList();
+        
+        var data = Enumerable
+            .Range(0, n)
+            .Select(x => randomizer.Next(0, 1_000))
+            .OrderBy(x => x)
+            .ToArray();
 
-        // Act.
-        var actualIndex = RecursiveBinarySearcher.FindIndex(collection, collection[selectedIndex]);
-
-        // Assert.
-        Assert.AreEqual(collection[selectedIndex], collection[actualIndex]);
+        var actual = new RecursiveBinarySearcher().FindIndex(data, data[selectedIndex]);
+        
+        Assert.AreEqual(data[selectedIndex], data[actual]);
     }
 
     [Test]
@@ -26,52 +28,24 @@ public static class RecursiveBinarySearcherTests
         [Random(0, 1_000, 10)] int n,
         [Random(-100, 1_100, 10)] int missingItem)
     {
-        // Arrange.
         var random = Randomizer.CreateRandomizer();
-        var collection = Enumerable
+        var data = Enumerable
             .Range(0, n)
             .Select(x => random.Next(0, 1_000))
             .Where(x => x != missingItem)
-            .OrderBy(x => x).ToList();
-
-        // Act.
-        var actualIndex = RecursiveBinarySearcher.FindIndex(collection, missingItem);
-
-        // Assert.
-        Assert.AreEqual(-1, actualIndex);
+            .OrderBy(x => x)
+            .ToArray();
+        
+        var actual = new RecursiveBinarySearcher().FindIndex(data, missingItem);
+        
+        Assert.AreEqual(-1, actual);
     }
 
     [Test]
     public static void FindIndex_ArrayEmpty_MinusOneReturned([Random(100)] int itemToSearch)
     {
-        // Arrange.
-        var collection = Array.Empty<int>();
+        var actual = new RecursiveBinarySearcher().FindIndex(Array.Empty<int>(), itemToSearch);
 
-        // Act.
-        var actualIndex = RecursiveBinarySearcher.FindIndex(collection, itemToSearch);
-
-        // Assert.
-        Assert.AreEqual(-1, actualIndex);
-    }
-
-    [Test]
-    public static void FindIndex_NullCollection_Throws()
-    {
-        // Arrange.
-        var collection = (IList<int>?)null;
-        var correct = false;
-        
-        // Act.
-        try
-        {
-            RecursiveBinarySearcher.FindIndex(collection, 42);
-        }
-        catch (ArgumentNullException)
-        {
-            correct = true;
-        }
-        
-        // Assert.
-        Assert.IsTrue(correct);
+        Assert.AreEqual(-1, actual);
     }
 }
