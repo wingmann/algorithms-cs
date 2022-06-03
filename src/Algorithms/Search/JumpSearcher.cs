@@ -1,58 +1,47 @@
-﻿namespace Algorithms.Search;
+﻿using Algorithms.Search.Interfaces;
+
+namespace Algorithms.Search;
 
 /// <summary>
-/// Jump search checks fewer elements by jumping ahead by fixed steps.
-/// The optimal steps to jump is sqrt(n), where n refers to the number of elements in the array.
-/// Time Complexity: O(sqrt(n))
-/// Note: The array has to be sorted beforehand.
+/// Jump search algorithm.
 /// </summary>
-public static class JumpSearcher
+public class JumpSearcher : ISearchAlgorithm
 {
     /// <summary>
-    /// Find the index of the item searched for in the array.
+    /// Finds the index of first occurrence of the target item.
     /// </summary>
-    /// <param name="sortedArray">Sorted array to be search in. Cannot be null.</param>
-    /// <param name="searchItem">Item to be search for. Cannot be null.</param>
-    /// <typeparam name="T">Type of the array element.</typeparam>
-    /// <returns>If item is found, return index. If array is empty or item not found, return -1.</returns>
-    public static int FindIndex<T>(T[] sortedArray, T searchItem) where T : IComparable<T>
+    /// <param name="data">Array where the element should be found.</param>
+    /// <param name="item">Element which should be found.</param>
+    /// <typeparam name="T">Comparable type.</typeparam>
+    /// <returns>Index of the first occurrence of the target element, or -1 if it is not found.</returns>
+    public int FindIndex<T>(T[] data, T item) where T : IComparable<T>
     {
-        if (sortedArray is null)
-        {
-            throw new ArgumentNullException(nameof(sortedArray));
-        }
-
-        if (searchItem is null)
-        {
-            throw new ArgumentNullException(nameof(searchItem));
-        }
-        
-        var jumpStep = (int)Math.Floor(Math.Sqrt(sortedArray.Length));
-        var currentIndex = 0;
-        var nextIndex = jumpStep;
-
-        if (sortedArray.Length is 0)
+        if (data.Length is 0)
         {
             return -1;
         }
 
-        while (sortedArray[nextIndex - 1].CompareTo(searchItem) < 0)
+        var jumpStep = (int)Math.Floor(Math.Sqrt(data.Length));
+        var currentIndex = 0;
+        var nextIndex = jumpStep;
+
+        while (data[nextIndex - 1].CompareTo(item) < 0)
         {
             currentIndex = nextIndex;
             nextIndex += jumpStep;
 
-            if (nextIndex < sortedArray.Length)
+            if (nextIndex < data.Length)
             {
                 continue;
             }
 
-            nextIndex = sortedArray.Length - 1;
+            nextIndex = data.Length - 1;
             break;
         }
 
         for (var i = currentIndex; i <= nextIndex; i++)
         {
-            if (sortedArray[i].CompareTo(searchItem) is 0)
+            if (data[i].CompareTo(item) is 0)
             {
                 return i;
             }
