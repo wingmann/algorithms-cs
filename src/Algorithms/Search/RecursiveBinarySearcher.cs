@@ -1,19 +1,12 @@
-﻿using Algorithms.Search.Interfaces;
-
-namespace Algorithms.Search;
+﻿namespace Algorithms.Search;
 
 /// <summary>
-/// Recursive binary search algorithm.
+/// Implements binary search algorithm.
+/// <see href="https://en.wikipedia.org/wiki/Binary_search_algorithm" />
 /// </summary>
 public class RecursiveBinarySearcher : ISearchAlgorithm
 {
-    /// <summary>
-    /// Finds the index of first occurrence of the target item.
-    /// </summary>
-    /// <param name="data">Array where the element should be found.</param>
-    /// <param name="item">Element which should be found.</param>
-    /// <typeparam name="T">Comparable type.</typeparam>
-    /// <returns>Index of the first occurrence of the target element, or -1 if it is not found.</returns>
+    /// <inheritdoc cref="ISearchAlgorithm.FindIndex{T}"/>>
     public int FindIndex<T>(T[] data, T item) where T : IComparable<T> => data.Length switch
     {
         0 => -1,

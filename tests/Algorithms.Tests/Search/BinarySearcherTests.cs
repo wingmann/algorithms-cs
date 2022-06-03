@@ -12,7 +12,7 @@ public static class BinarySearcherTests
         var random = Randomizer.CreateRandomizer();
         var data = Enumerable
             .Range(0, n)
-            .Select(x => random.Next(0, 1000))
+            .Select(x => random.Next(0, 1_000))
             .OrderBy(x => x)
             .ToArray();
         

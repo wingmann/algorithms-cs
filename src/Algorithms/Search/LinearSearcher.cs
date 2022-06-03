@@ -2,43 +2,16 @@
 
 /// <summary>
 /// Implements linear search algorithm.
+/// <see href="https://en.wikipedia.org/wiki/Linear_search" />
 /// </summary>
-public class LinearSearcher
+public class LinearSearcher : ISearchAlgorithm
 {
-    /// <summary>
-    /// Finds first item in array that satisfies specified term.
-    /// Time complexity: O(n), space complexity: O(1).
-    /// </summary>
-    /// <param name="data">Array to search in.</param>
-    /// <param name="term">Term to check against.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
-    /// <exception cref="ApplicationException"></exception>
-    /// <returns>First item that satisfies term.</returns>
-    public static T Find<T>(IEnumerable<T> data, Func<T, bool> term)
-    {
-        foreach (var t in data)
-        {
-            if (term(t))
-            {
-                return t;
-            }
-        }
-
-        throw new ApplicationException("Item not found.");
-    }
-    
-    /// <summary>
-    /// Finds index of first item in array that satisfies specified term.
-    /// Time complexity: O(n), space complexity: O(1).
-    /// </summary>
-    /// <param name="data">Array to search in.</param>
-    /// <param name="term">Term to check against.</param>
-    /// <returns>Index of first item that satisfies term or -1 if none found.</returns>
-    public static int FindIndex<T>(T[] data, Func<T, bool> term)
+    /// <inheritdoc cref="ISearchAlgorithm.FindIndex{T}"/>>
+    public int FindIndex<T>(T[] data, T item) where T : IComparable<T>
     {
         for (var i = 0; i < data.Length; i++)
         {
-            if (term(data[i]))
+            if (item.CompareTo(data[i]) is 0)
             {
                 return i;
             }
