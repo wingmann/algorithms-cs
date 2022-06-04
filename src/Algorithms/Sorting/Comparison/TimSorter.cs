@@ -5,7 +5,7 @@ namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements hybrid sorting algorithm, derived from merge sort and insertion sort.
-/// See <a href="https://en.wikipedia.org/wiki/Timsort">here</a> for more info.
+/// <see href="https://en.wikipedia.org/wiki/Timsort" />
 /// </summary>
 public class TimSorter : IComparisonSorter
 {
@@ -37,13 +37,7 @@ public class TimSorter : IComparisonSorter
         _minGallop = minGallop;
     }
 
-    /// <summary>
-    /// Sorts array using specified comparer.
-    /// Worst case performance: O(n log(n)), best case performance: O(n)
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         var start = 0;
@@ -93,12 +87,6 @@ public class TimSorter : IComparisonSorter
 
     // Returns the minimum acceptable run length for an array of the specified length.
     // Natural runs shorter than this will be extended.
-    //
-    // Computation is:
-    //     If total less than minRun, return n (it's too small to bother with fancy stuff).
-    //     Else if total is an exact power of 2, return minRun/2.
-    //     Else return an int k, where minRun/2 <= k <= minRun, such that total/k is close to, but strictly less than,
-    //     an exact power of 2.
     private static int MinRunLength(int total, int minRun)
     {
         var r = 0;
@@ -217,22 +205,26 @@ public class TimSorter : IComparisonSorter
     // Find the position in the array that a key should fit to the left of where it currently sits.
     private static int GallopLeft<T>(IReadOnlyList<T> array, T key, int i, int len, int hint, ref IComparer<T> comparer)
     {
-        var (offset, lastOfs) = comparer.Compare(key, array[i + hint]) > 0
-            ? RightRun(array, key, i, len, hint, 0, ref comparer)
-            : LeftRun(array, key, i, hint, 1, ref comparer);
+        var (offset, lastOffset) = comparer.Compare(key, array[i + hint]) switch
+        {
+            > 0 => RightRun(array, key, i, len, hint, 0, ref comparer),
+            _ => LeftRun(array, key, i, hint, 1, ref comparer),
+        };
 
-        return FinalOffset(array, key, i, offset, lastOfs, 1, ref comparer);
+        return FinalOffset(array, key, i, offset, lastOffset, 1, ref comparer);
     }
 
     // Find the position in the array that a key should fit to the right of where it currently sits.
     private static int GallopRight<T>(IReadOnlyList<T> array, T key, int i, int len, int hint,
         ref IComparer<T> comparer)
     {
-        var (offset, lastOfs) = comparer.Compare(key, array[i + hint]) < 0
-            ? LeftRun(array, key, i, hint, 0, ref comparer)
-            : RightRun(array, key, i, len, hint, -1, ref comparer);
+        var (offset, lastOffset) = comparer.Compare(key, array[i + hint]) switch
+        {
+            < 0 => LeftRun(array, key, i, hint, 0, ref comparer),
+            _ => RightRun(array, key, i, len, hint, -1, ref comparer),
+        };
 
-        return FinalOffset(array, key, i, offset, lastOfs, 0, ref comparer);
+        return FinalOffset(array, key, i, offset, lastOffset, 0, ref comparer);
     }
 
     private static (int offset, int lastOfs) LeftRun<T>(IReadOnlyList<T> array, T key, int i, int hint, int lt,

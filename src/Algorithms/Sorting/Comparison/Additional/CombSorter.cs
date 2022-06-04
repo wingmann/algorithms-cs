@@ -9,16 +9,10 @@ public class CombSorter : IComparisonSorter
 {
     private double ShrinkFactor { get; }
     
-    public CombSorter(double? shrinkFactor) => ShrinkFactor = shrinkFactor ?? 1.3;
+    public CombSorter(double? shrinkFactor) =>
+        ShrinkFactor = shrinkFactor ?? 1.3;
     
-    /// <summary>
-    /// Sorts array using specified comparer, internal, in-place, unstable.
-    /// Worst case performance: O(n^2), best case performance: O(n log(n)), average performance: O(n^2 / 2^p),
-    /// space complexity: O(1), where n - array length and p - number of increments.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         var gap = array.Length;

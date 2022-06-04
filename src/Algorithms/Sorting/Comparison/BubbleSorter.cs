@@ -8,7 +8,7 @@ namespace Algorithms.Sorting.Comparison;
 /// </summary>
 public class BubbleSorter : IComparisonSorter
 {
-    /// <inheritdoc cref="IComparisonSorter.Sort{T}"/>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         for (var i = 0; i < array.Length - 1; i++)

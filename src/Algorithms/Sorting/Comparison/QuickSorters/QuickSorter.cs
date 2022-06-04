@@ -3,18 +3,12 @@ using Algorithms.Sorting.Comparison.Interfaces;
 namespace Algorithms.Sorting.Comparison.QuickSorters;
 
 /// <summary>
-/// Sorts arrays using quicksort.
+/// Implements quicksort algorithm.
+/// <see href="https://en.wikipedia.org/wiki/Quicksort" />
 /// </summary>
 public abstract class QuickSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts array using Hoare partition scheme, internal, in-place.
-    /// Time complexity average: O(n log(n)), time complexity worst: O(n^2), space complexity: O(log(n)),
-    /// where n - array length.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T> =>
         Sort(array, comparer, 0, array.Length - 1);
 

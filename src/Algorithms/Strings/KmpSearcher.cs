@@ -1,7 +1,8 @@
 ﻿namespace Algorithms.Strings;
 
 /// <summary>
-/// Implements Knuth–Morris–Pratt substring search algorithm.
+/// Implements Knuth–Morris–Pratt string search algorithm.
+/// <see href="https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" />
 /// </summary>
 public static class KmpSearcher
 {

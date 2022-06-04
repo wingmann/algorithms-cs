@@ -5,17 +5,13 @@ namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements bogo sort algorithm.
+/// <see href="https://en.wikipedia.org/wiki/Bogosort" />
 /// </summary>
 public class BogoSorter : IComparisonSorter
 {
     private readonly Random _random = new();
     
-    /// <summary>
-    /// Sorts array using permutation sorting algorithm.
-    /// </summary>
-    /// <param name="array">Input array.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         while (IsSorted(array, comparer) is false)

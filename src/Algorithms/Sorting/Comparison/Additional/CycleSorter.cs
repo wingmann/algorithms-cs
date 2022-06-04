@@ -3,19 +3,11 @@
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Cycle sort is an in-place, unstable sorting algorithm, a comparison sort that is theoretically optimal in
-/// terms of the total number of writes to the original array.
-/// It is based on the idea that the permutation to be sorted can be factored into cycles,
-/// which can individually be rotated to give a sorted result.
+/// Implements cycle sorting algorithm.
 /// </summary>
 public class CycleSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts input array using cycle sort.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         for (var i = 0; i < array.Length - 1; i++)

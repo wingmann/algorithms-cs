@@ -7,13 +7,7 @@ namespace Algorithms.Sorting.Comparison.Additional;
 /// </summary>
 public class ShellSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts array using specified comparer, based on bubble sort, internal, in-place, unstable.
-    /// Worst-case time complexity: O(n^2), space complexity: O(1), where n - array length.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         for (var step = array.Length / 2; step > 0; step /= 2)

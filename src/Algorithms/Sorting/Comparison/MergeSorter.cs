@@ -8,13 +8,7 @@ namespace Algorithms.Sorting.Comparison;
 /// </summary>
 public class MergeSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts array using merge sort algorithm, originally designed as external sorting algorithm, internal, stable.
-    /// <br/>Time complexity: O(n log(n)), space complexity: O(n), where n - array length.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Comparer to compare elements of <paramref name="array" />.</param>
-    /// <typeparam name="T">Type of array elements.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         if (array.Length <= 1)

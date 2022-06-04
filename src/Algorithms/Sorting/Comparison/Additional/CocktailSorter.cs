@@ -8,13 +8,9 @@ namespace Algorithms.Sorting.Comparison.Additional;
 /// </summary>
 public class CocktailSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts array using cocktail sort algorithm.
-    /// </summary>
-    /// <param name="array">Input array.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Array input type.</typeparam>
-    public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T> => CocktailSort(array, comparer);
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
+    public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T> =>
+        CocktailSort(array, comparer);
     
     private static void CocktailSort<T>(IList<T> array, IComparer<T> comparer)
     {

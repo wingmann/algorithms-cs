@@ -7,12 +7,7 @@ namespace Algorithms.Sorting.Comparison;
 /// </summary>
 public class HeapSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts input array using heap sort algorithm.
-    /// </summary>
-    /// <param name="array">Input array.</param>
-    /// <param name="comparer">Comparer type for elements.</param>
-    /// <typeparam name="T">Input array type.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         var heapSize = array.Length;

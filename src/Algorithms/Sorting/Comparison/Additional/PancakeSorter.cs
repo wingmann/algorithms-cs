@@ -7,13 +7,7 @@ namespace Algorithms.Sorting.Comparison.Additional;
 /// </summary>
 public class PancakeSorter : IComparisonSorter
 {
-    /// <summary>
-    /// Sorts array using specified comparer, internal, in-place, stable.
-    /// Time complexity: O(n^2), space complexity: O(1), where n - array length.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    /// <param name="comparer">Compares elements.</param>
-    /// <typeparam name="T">Type of array element.</typeparam>
+    /// <inheritdoc cref="IComparisonSorter.Sort{T}" />
     public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
     {
         var n = array.Length;
