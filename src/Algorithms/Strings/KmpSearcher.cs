@@ -2,7 +2,7 @@
 
 /// <summary>
 /// Implements Knuth–Morris–Pratt string search algorithm.
-/// <see href="https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm" />
+/// See on <see href="https://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm">Wikipedia</see>.
 /// </summary>
 public static class KmpSearcher
 {

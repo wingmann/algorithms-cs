@@ -2,7 +2,7 @@
 
 /// <summary>
 /// Implements Boyer-Moore string search algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Boyer-Moore_string-search_algorithm">Wikipedia</see>.
 /// </summary>
 public static class BoyerMoore
 {

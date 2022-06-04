@@ -5,7 +5,7 @@ namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements hybrid sorting algorithm, derived from merge sort and insertion sort.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Timsort" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Timsort">Wikipedia</see>.
 /// </summary>
 public class TimSorter : IComparisonSorter
 {

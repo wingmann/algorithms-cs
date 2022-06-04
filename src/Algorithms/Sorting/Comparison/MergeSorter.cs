@@ -5,7 +5,7 @@ namespace Algorithms.Sorting.Comparison;
 /// <summary>
 /// Divide and Conquer algorithm, which splits array in two halves, calls itself for the two halves and
 /// then merges the two sorted halves.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Merge_sort" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Merge_sort">Wikipedia</see>.
 /// </summary>
 public class MergeSorter : IComparisonSorter
 {

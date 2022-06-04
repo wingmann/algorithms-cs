@@ -4,7 +4,7 @@ namespace Algorithms.Search;
 
 /// <summary>
 /// Implements linear search algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Linear_search" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Linear_search">Wikipedia</see>.
 /// </summary>
 public class LinearSearcher : ISearchAlgorithm
 {

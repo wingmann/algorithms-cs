@@ -3,8 +3,8 @@
 namespace Algorithms.Sorting.Strings;
 
 /// <summary>
-/// Implements most significant digit radix string sorting algorithm.
-/// <see href="https://www.geeksforgeeks.org/msd-most-significant-digit-radix-sort" />
+/// Implements most significant digit radix string sorting algorithm.<br />
+/// See on <see href="https://www.geeksforgeeks.org/msd-most-significant-digit-radix-sort">GeeksForGeeks</see>.
 /// </summary>
 public class MsdRadixStringSorter : IStringSorter
 {

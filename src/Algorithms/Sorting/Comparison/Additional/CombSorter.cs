@@ -3,7 +3,8 @@
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Comb sort is a relatively simple sorting algorithm that improves on bubble sort.
+/// Implements comb sorting algorithm.<br />
+/// See on <see href="https://en.wikipedia.org/wiki/Comb_sort">Wikipedia</see>.
 /// </summary>
 public class CombSorter : IComparisonSorter
 {

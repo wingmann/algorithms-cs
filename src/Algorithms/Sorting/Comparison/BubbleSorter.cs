@@ -4,7 +4,7 @@ namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements bubble sort algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Bubble_sort" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Bubble_sort">Wikipedia</see>.
 /// </summary>
 public class BubbleSorter : IComparisonSorter
 {

@@ -3,7 +3,8 @@
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements pancake sort algorithm.
+/// Implements pancake sort algorithm.<br />
+/// See on <see href="https://en.wikipedia.org/wiki/Pancake_sorting">Wikipedia</see>.
 /// </summary>
 public class PancakeSorter : IComparisonSorter
 {

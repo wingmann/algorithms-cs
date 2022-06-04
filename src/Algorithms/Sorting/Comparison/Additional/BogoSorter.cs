@@ -5,7 +5,7 @@ namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements bogo sort algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Bogosort" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Bogosort">Wikipedia</see>.
 /// </summary>
 public class BogoSorter : IComparisonSorter
 {

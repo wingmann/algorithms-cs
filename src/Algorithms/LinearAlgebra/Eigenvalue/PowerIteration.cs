@@ -2,6 +2,10 @@
 
 namespace Algorithms.LinearAlgebra.Eigenvalue;
 
+/// <summary>
+/// Implements power iteration algorithm.<br />
+/// See on <see href="https://en.wikipedia.org/wiki/Power_iteration">Wikipedia</see>.
+/// </summary>
 public static class PowerIteration
 {
     /// <summary>

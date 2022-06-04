@@ -3,8 +3,8 @@
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Cocktail sort is a variation of Bubble sort, where cocktail sort traverses through a given array in
-/// both directions alternatively.
+/// Implements cocktail sorting algorithm.<br />
+/// See on <see href="https://en.wikipedia.org/wiki/Cocktail_shaker_sort">Wikipedia</see>.
 /// </summary>
 public class CocktailSorter : IComparisonSorter
 {

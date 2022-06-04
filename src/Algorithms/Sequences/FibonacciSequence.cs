@@ -5,7 +5,7 @@ namespace Algorithms.Sequences;
 
 /// <summary>
 /// Implements fibonacci sequence algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Fibonacci_number" />
+/// See on <see href="https://en.wikipedia.org/wiki/Fibonacci_number">Wikipedia</see>.
 /// </summary>
 public class FibonacciSequence : ISequence
 {

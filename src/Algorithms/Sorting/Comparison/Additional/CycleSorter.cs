@@ -4,6 +4,7 @@ namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements cycle sorting algorithm.
+/// See on <see href="https://en.wikipedia.org/wiki/Cycle_sort">Wikipedia</see>.
 /// </summary>
 public class CycleSorter : IComparisonSorter
 {

@@ -4,7 +4,7 @@ namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements insertion sort algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Insertion_sort" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Insertion_sort">Wikipedia</see>.
 /// </summary>
 public class InsertionSorter : IComparisonSorter
 {

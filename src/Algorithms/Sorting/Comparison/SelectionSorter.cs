@@ -4,7 +4,7 @@ namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements selection sort algorithm.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Selection_sort" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Selection_sort">Wikipedia</see>.
 /// </summary>
 public class SelectionSorter : IComparisonSorter
 {

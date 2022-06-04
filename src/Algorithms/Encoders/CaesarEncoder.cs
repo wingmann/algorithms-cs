@@ -5,7 +5,7 @@ namespace Algorithms.Encoders;
 
 /// <summary>
 /// Implements encoder using caesar cypher.<br />
-/// See <see href="https://en.wikipedia.org/wiki/Caesar_cipher" />.
+/// See on <see href="https://en.wikipedia.org/wiki/Caesar_cipher">Wikipedia</see>.
 /// </summary>
 public class CaesarEncoder : IEncoder<int>
 {

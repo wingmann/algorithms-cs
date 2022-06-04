@@ -3,7 +3,8 @@
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements shell sort algorithm.
+/// Implements shell sort algorithm.<br />
+/// See on <see href="https://en.wikipedia.org/wiki/Shellsort">Wikipedia</see>.
 /// </summary>
 public class ShellSorter : IComparisonSorter
 {
