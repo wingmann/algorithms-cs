@@ -3,18 +3,14 @@
 namespace Algorithms.Sorting.Strings;
 
 /// <summary>
-/// Radix sort is a non-comparative sorting algorithm.
-/// It avoids comparison by creating and distributing elements into buckets according to their radix.
-/// Radix sorts can be implemented to start at either the most significant digit (MSD) or least significant digit (LSD).
-/// MSD radix sorts are most suitable for sorting array of strings with variable length in lexicographical order.
+/// Implements most significant digit radix string sorting algorithm.
+/// <see href="https://www.geeksforgeeks.org/msd-most-significant-digit-radix-sort" />
 /// </summary>
 public class MsdRadixStringSorter : IStringSorter
 {
-    /// <summary>
-    /// Sort array of strings using MSD radix sort algorithm.
-    /// </summary>
-    /// <param name="array">Array to sort.</param>
-    public void Sort(string[] array) => Sort(array, 0, array.Length - 1, 0, new string[array.Length]);
+    /// <inheritdoc cref="IStringSorter.Sort" />
+    public void Sort(string[] array) =>
+        Sort(array, 0, array.Length - 1, 0, new string[array.Length]);
     
     private static void Sort(IList<string> array, int l, int r, int d, IList<string> temp)
     {
