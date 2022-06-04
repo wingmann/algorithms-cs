@@ -8,7 +8,7 @@ namespace Algorithms.Search;
 /// </summary>
 public class BinarySearcher : ISearchAlgorithm
 {
-    /// <inheritdoc cref="ISearchAlgorithm.FindIndex{T}"/>>
+    /// <inheritdoc cref="ISearchAlgorithm.FindIndex{T}" />
     public int FindIndex<T>(T[] data, T item) where T : IComparable<T>
     {
         var leftIndex = 0;

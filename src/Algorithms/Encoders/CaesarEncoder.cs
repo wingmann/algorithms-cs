@@ -1,29 +1,18 @@
-﻿using System.Text;
-using Algorithms.Encoders.Interfaces;
+﻿using Algorithms.Encoders.Interfaces;
+using System.Text;
 
 namespace Algorithms.Encoders;
 
 /// <summary>
 /// Implements encoder using caesar cypher.
+/// <see href="https://en.wikipedia.org/wiki/Caesar_cipher" />
 /// </summary>
 public class CaesarEncoder : IEncoder<int>
 {
-    /// <summary>
-    /// Encodes text using specified key.
-    /// Time complexity: O(n), space complexity: O(n), where n - text length.
-    /// </summary>
-    /// <param name="data">Text to be encoded.</param>
-    /// <param name="key">Key that will be used to encode the text.</param>
-    /// <returns>Encoded text.</returns>
+    /// <inheritdoc cref="IEncoder{TKey}.Encode"/>
     public string Encode(string data, int key) => Cipher(data, key);
 
-    /// <summary>
-    /// Decodes text that was encoded using specified key.
-    /// Time complexity: O(n), space complexity: O(n), where n - text length.
-    /// </summary>
-    /// <param name="data">Text to be decoded.</param>
-    /// <param name="key">Key that was used to encode the text.</param>
-    /// <returns>Decoded text.</returns>
+    /// <inheritdoc cref="IEncoder{TKey}.Decode"/>
     public string Decode(string data, int key) => Cipher(data, -key);
 
     private static string Cipher(string data, int key)

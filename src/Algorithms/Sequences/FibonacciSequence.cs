@@ -10,7 +10,7 @@ namespace Algorithms.Sequences;
 /// </summary>
 public class FibonacciSequence : ISequence
 {
-    /// <inheritdoc cref="ISequence.Generate"/>
+    /// <inheritdoc cref="ISequence.Generate" />
     public IEnumerable<BigInteger> Generate(int limit)
     {
         yield return 0;
