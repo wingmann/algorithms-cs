@@ -3,8 +3,8 @@
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements bubble sort algorithm.
-/// <see href="https://en.wikipedia.org/wiki/Bubble_sort" />
+/// Implements bubble sort algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Bubble_sort" />.
 /// </summary>
 public class BubbleSorter : IComparisonSorter
 {

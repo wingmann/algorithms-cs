@@ -3,7 +3,8 @@ using Algorithms.Sorting.Comparison.Interfaces;
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements insertion sort algorithm.
+/// Implements insertion sort algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Insertion_sort" />.
 /// </summary>
 public class InsertionSorter : IComparisonSorter
 {

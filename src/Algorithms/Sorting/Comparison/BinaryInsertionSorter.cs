@@ -3,9 +3,9 @@ using Algorithms.Sorting.Comparison.Interfaces;
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements binary insertion sort algorithm.
-/// <see href="https://en.wikipedia.org/wiki/Binary_search_algorithm"/>
-/// <see href="https://en.wikipedia.org/wiki/Insertion_sort"/>
+/// Implements binary insertion sort algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Binary_search_algorithm"/> and
+/// <see href="https://en.wikipedia.org/wiki/Insertion_sort"/>.
 /// </summary>
 public class BinaryInsertionSorter : IComparisonSorter
 {

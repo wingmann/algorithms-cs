@@ -3,8 +3,8 @@
 namespace Algorithms.Search;
 
 /// <summary>
-/// Implements binary search algorithm.
-/// <see href="https://en.wikipedia.org/wiki/Binary_search_algorithm" />
+/// Implements binary search algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Binary_search_algorithm" />.
 /// </summary>
 public class RecursiveBinarySearcher : ISearchAlgorithm
 {

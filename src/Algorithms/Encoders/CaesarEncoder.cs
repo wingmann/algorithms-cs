@@ -4,8 +4,8 @@ using System.Text;
 namespace Algorithms.Encoders;
 
 /// <summary>
-/// Implements encoder using caesar cypher.
-/// <see href="https://en.wikipedia.org/wiki/Caesar_cipher" />
+/// Implements encoder using caesar cypher.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Caesar_cipher" />.
 /// </summary>
 public class CaesarEncoder : IEncoder<int>
 {

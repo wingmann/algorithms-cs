@@ -4,8 +4,8 @@ using Algorithms.Sorting.Comparison.Internal;
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements hybrid sorting algorithm, derived from merge sort and insertion sort.
-/// <see href="https://en.wikipedia.org/wiki/Timsort" />
+/// Implements hybrid sorting algorithm, derived from merge sort and insertion sort.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Timsort" />.
 /// </summary>
 public class TimSorter : IComparisonSorter
 {

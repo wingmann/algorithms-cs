@@ -1,12 +1,11 @@
-﻿using System.Data;
+﻿using Algorithms.Sequences.Interfaces;
 using System.Numerics;
-using Algorithms.Sequences.Interfaces;
 
 namespace Algorithms.Sequences;
 
 /// <summary>
-/// Implements fibonacci sequence algorithm.
-/// <see href="https://wikipedia.org/wiki/Fibonacci_number" />
+/// Implements fibonacci sequence algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Fibonacci_number" />
 /// </summary>
 public class FibonacciSequence : ISequence
 {

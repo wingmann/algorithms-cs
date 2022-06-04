@@ -3,8 +3,8 @@
 namespace Algorithms.Search;
 
 /// <summary>
-/// Implements jump search algorithm.
-/// <see href="https://en.wikipedia.org/wiki/Jump_search" />
+/// Implements jump search algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Jump_search" />.
 /// </summary>
 public class JumpSearcher : ISearchAlgorithm
 {

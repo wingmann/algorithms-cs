@@ -3,7 +3,8 @@
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements selection sort algorithm.
+/// Implements selection sort algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Selection_sort" />.
 /// </summary>
 public class SelectionSorter : IComparisonSorter
 {

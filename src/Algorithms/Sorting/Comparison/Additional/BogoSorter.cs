@@ -4,8 +4,8 @@ using Algorithms.Sorting.Comparison.Interfaces;
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements bogo sort algorithm.
-/// <see href="https://en.wikipedia.org/wiki/Bogosort" />
+/// Implements bogo sort algorithm.<br />
+/// See <see href="https://en.wikipedia.org/wiki/Bogosort" />.
 /// </summary>
 public class BogoSorter : IComparisonSorter
 {

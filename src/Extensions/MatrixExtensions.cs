@@ -15,8 +15,7 @@ public static class MatrixExtensions
     {
         if (source.GetLength(1) != operand.GetLength(0))
         {
-            throw new InvalidOperationException(
-                "The width of a first operand should match the height of a second.");
+            throw new InvalidOperationException("The width of a first operand should match the height of a second.");
         }
 
         var result = new double[source.GetLength(0), operand.GetLength(1)];
@@ -115,7 +114,8 @@ public static class MatrixExtensions
     /// <exception cref="ArgumentException">Dimensions of matrices do not match.</exception>
     public static double[,] Subtract(this double[,] lhs, double[,] rhs)
     {
-        var condition = lhs.GetLength(0) != rhs.GetLength(0) || lhs.GetLength(1) != rhs.GetLength(1);
+        var condition = lhs.GetLength(0) != rhs.GetLength(0) ||
+                        lhs.GetLength(1) != rhs.GetLength(1);
         
         if (condition)
         {
@@ -136,7 +136,7 @@ public static class MatrixExtensions
     }
 
     /// <summary>
-    ///     Performs an element by element comparison on both matrices.
+    /// Performs an element by element comparison on both matrices.
     /// </summary>
     /// <param name="source">Source left matrix.</param>
     /// <param name="operand">Operand right matrix.</param>
