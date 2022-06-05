@@ -1,6 +1,4 @@
-﻿using Algorithms.Sorting.External.Interfaces;
-
-namespace Algorithms.Sorting.External.Storages;
+﻿namespace Algorithms.Sorting.External.Storages;
 
 public class IntegerInMemoryStorage : ISequentialStorage<int>
 {

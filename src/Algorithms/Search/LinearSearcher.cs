@@ -1,9 +1,7 @@
-﻿using Algorithms.Search.Interfaces;
-
-namespace Algorithms.Search;
+﻿namespace Algorithms.Search;
 
 /// <summary>
-/// Implements linear search algorithm.<br />
+/// Implements linear search algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Linear_search">Wikipedia</see>.
 /// </summary>
 public class LinearSearcher : ISearchAlgorithm
@@ -18,7 +16,7 @@ public class LinearSearcher : ISearchAlgorithm
                 return i;
             }
         }
-
+        
         return -1;
     }
 }

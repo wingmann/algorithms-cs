@@ -1,6 +1,4 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison.Additional;
+﻿namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements cycle sorting algorithm.

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Strings.Interfaces;
+﻿namespace Algorithms.Sorting.Strings;
 
 /// <summary>
 /// Sorts array of strings without comparing them.

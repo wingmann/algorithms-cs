@@ -3,7 +3,7 @@
 namespace Algorithms.Sorting.Integral;
 
 /// <summary>
-/// Implements counting sorting algorithm.<br />
+/// Implements counting sorting algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Counting_sort">Wikipedia</see>.
 /// </summary>
 public class CountingSorter : IIntegralSorter

@@ -1,5 +1,3 @@
-using Algorithms.Sorting.Comparison.Interfaces;
-
 namespace Algorithms.Sorting.Comparison.QuickSorters;
 
 /// <summary>

@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison;
+﻿namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements bubble sort algorithm.<br />
+/// Implements bubble sort algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Bubble_sort">Wikipedia</see>.
 /// </summary>
 public class BubbleSorter : IComparisonSorter

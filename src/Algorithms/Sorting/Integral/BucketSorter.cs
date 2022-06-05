@@ -3,7 +3,7 @@
 namespace Algorithms.Sorting.Integral;
 
 /// <summary>
-/// Implements bucket sort algorithm.<br />
+/// Implements bucket sort algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Bucket_sort">Wikipedia</see>.
 /// </summary>
 public class BucketSorter : IIntegralSorter

@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison.Additional;
+﻿namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements pancake sort algorithm.<br />
+/// Implements pancake sort algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Pancake_sorting">Wikipedia</see>.
 /// </summary>
 public class PancakeSorter : IComparisonSorter

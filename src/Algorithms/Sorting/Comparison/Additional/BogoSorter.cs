@@ -1,10 +1,9 @@
 ﻿using System.Collections;
-using Algorithms.Sorting.Comparison.Interfaces;
 
 namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements bogo sort algorithm.<br />
+/// Implements bogo sort algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Bogosort">Wikipedia</see>.
 /// </summary>
 public class BogoSorter : IComparisonSorter

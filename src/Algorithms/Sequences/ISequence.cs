@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace Algorithms.Sequences.Interfaces;
+namespace Algorithms.Sequences;
 
 /// <summary>
 /// Common interface for all integral sequences.

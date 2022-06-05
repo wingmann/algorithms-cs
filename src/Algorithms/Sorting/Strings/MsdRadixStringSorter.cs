@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Strings.Interfaces;
-
-namespace Algorithms.Sorting.Strings;
+﻿namespace Algorithms.Sorting.Strings;
 
 /// <summary>
-/// Implements most significant digit radix string sorting algorithm.<br />
+/// Implements most significant digit radix string sorting algorithm.
 /// See on <see href="https://www.geeksforgeeks.org/msd-most-significant-digit-radix-sort">GeeksForGeeks</see>.
 /// </summary>
 public class MsdRadixStringSorter : IStringSorter

@@ -3,7 +3,7 @@
 namespace Algorithms.Sorting.Integral;
 
 /// <summary>
-/// Implements radix sorting algorithm.<br />
+/// Implements radix sorting algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Radix_sort">Wikipedia</see>.
 /// </summary>
 public class RadixSorter : IIntegralSorter

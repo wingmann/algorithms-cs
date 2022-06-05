@@ -1,9 +1,7 @@
-﻿using Algorithms.Search.Interfaces;
-
-namespace Algorithms.Search;
+﻿namespace Algorithms.Search;
 
 /// <summary>
-/// Implements jump search algorithm.<br />
+/// Implements jump search algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Jump_search">Wikipedia</see>.
 /// </summary>
 public class JumpSearcher : ISearchAlgorithm

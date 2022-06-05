@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison.Additional;
+﻿namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements cocktail sorting algorithm.<br />
+/// Implements cocktail sorting algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Cocktail_shaker_sort">Wikipedia</see>.
 /// </summary>
 public class CocktailSorter : IComparisonSorter

@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison.Additional;
+﻿namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements shell sort algorithm.<br />
+/// Implements shell sort algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Shellsort">Wikipedia</see>.
 /// </summary>
 public class ShellSorter : IComparisonSorter

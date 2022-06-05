@@ -1,6 +1,4 @@
-﻿using Algorithms.Sorting.External.Interfaces;
-
-namespace Algorithms.Sorting.External;
+﻿namespace Algorithms.Sorting.External;
 
 public class ExternalMergeSorter : IExternalSorter
 {

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Encoders.Interfaces;
+﻿namespace Algorithms.Encoders;
 
 /// <summary>
 /// Encodes and decodes text based on specified key.

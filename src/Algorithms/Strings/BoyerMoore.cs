@@ -1,7 +1,7 @@
 ﻿namespace Algorithms.Strings;
 
 /// <summary>
-/// Implements Boyer-Moore string search algorithm.<br />
+/// Implements Boyer-Moore string search algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Boyer-Moore_string-search_algorithm">Wikipedia</see>.
 /// </summary>
 public static class BoyerMoore

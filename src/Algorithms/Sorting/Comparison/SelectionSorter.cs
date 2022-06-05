@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison;
+﻿namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements selection sort algorithm.<br />
+/// Implements selection sort algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Selection_sort">Wikipedia</see>.
 /// </summary>
 public class SelectionSorter : IComparisonSorter

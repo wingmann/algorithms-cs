@@ -1,9 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison.Additional;
+﻿namespace Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
-/// Implements comb sorting algorithm.<br />
+/// Implements comb sorting algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Comb_sort">Wikipedia</see>.
 /// </summary>
 public class CombSorter : IComparisonSorter

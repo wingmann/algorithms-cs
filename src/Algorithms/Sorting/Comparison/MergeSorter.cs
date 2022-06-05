@@ -1,10 +1,7 @@
-﻿using Algorithms.Sorting.Comparison.Interfaces;
-
-namespace Algorithms.Sorting.Comparison;
+﻿namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Divide and Conquer algorithm, which splits array in two halves, calls itself for the two halves and
-/// then merges the two sorted halves.<br />
+/// Implements merge sorting algorithm.
 /// See on <see href="https://en.wikipedia.org/wiki/Merge_sort">Wikipedia</see>.
 /// </summary>
 public class MergeSorter : IComparisonSorter

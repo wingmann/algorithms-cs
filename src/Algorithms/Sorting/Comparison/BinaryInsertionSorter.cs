@@ -1,9 +1,7 @@
-using Algorithms.Sorting.Comparison.Interfaces;
-
 namespace Algorithms.Sorting.Comparison;
 
 /// <summary>
-/// Implements binary insertion sort algorithm.<br />
+/// Implements binary insertion sort algorithm.
 /// See on <see href="https://www.geeksforgeeks.org/binary-insertion-sort">GeeksForGeeks</see>.
 /// </summary>
 public class BinaryInsertionSorter : IComparisonSorter

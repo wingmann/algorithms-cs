@@ -1,5 +1,4 @@
-﻿using Algorithms.Encoders.Interfaces;
-using System.Text;
+﻿using System.Text;
 
 namespace Algorithms.Encoders;
 
