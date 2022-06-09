@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Search;
+﻿namespace Wingmann.Algorithms.Search;
 
 /// <summary>
 /// Implements linear search algorithm.

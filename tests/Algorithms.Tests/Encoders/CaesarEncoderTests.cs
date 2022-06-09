@@ -1,8 +1,8 @@
-﻿using Algorithms.Encoders;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using NUnit.Framework.Internal;
+using Wingmann.Algorithms.Encoders;
 
-namespace Algorithms.Tests.Encoders;
+namespace Wingmann.Algorithms.Tests.Encoders;
 
 public static class CaesarEncoderTests
 {

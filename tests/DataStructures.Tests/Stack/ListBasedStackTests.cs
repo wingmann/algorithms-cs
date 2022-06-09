@@ -1,8 +1,8 @@
-﻿using DataStructures.Stack;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
+using Wingmann.DataStructures.Stack;
 
-namespace DataStructures.Tests.Stack;
+namespace Wingmann.DatStuctures.Tests.Stack;
 
 public static class ListBasedStackTests
 {

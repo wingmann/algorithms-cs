@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Algorithms.Sorting.Comparison.Additional;
+namespace Wingmann.Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements bogo sort algorithm.

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Comparison;
+﻿namespace Wingmann.Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements bubble sort algorithm.

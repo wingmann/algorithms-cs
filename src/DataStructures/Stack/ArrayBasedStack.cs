@@ -1,4 +1,4 @@
-﻿namespace DataStructures.Stack;
+﻿namespace Wingmann.DataStructures.Stack;
 
 /// <summary>
 /// Implements array-based stack.

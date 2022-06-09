@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Algorithms.Tests.Search.Helpers;
+namespace Wingmann.Algorithms.Tests.Search.Helpers;
 
 public class Helper
 {

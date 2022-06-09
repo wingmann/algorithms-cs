@@ -5,6 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>true</ImplicitUsings>
         <IsPackable>false</IsPackable>
+        <RootNamespace>Wingmann.Algorithms.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

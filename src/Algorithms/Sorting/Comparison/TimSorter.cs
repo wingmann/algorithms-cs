@@ -1,6 +1,6 @@
-﻿using Algorithms.Sorting.Comparison.Internal;
+﻿using Wingmann.Algorithms.Sorting.Comparison.Internal;
 
-namespace Algorithms.Sorting.Comparison;
+namespace Wingmann.Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Implements hybrid sorting algorithm, derived from merge sort and insertion sort.

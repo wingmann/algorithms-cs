@@ -1,4 +1,4 @@
-namespace Extensions;
+namespace Wingmann.Algorithms.Extentions;
 
 public static class RandomExtensions
 {

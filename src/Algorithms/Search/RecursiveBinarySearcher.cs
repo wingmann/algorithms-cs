@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Search;
+﻿namespace Wingmann.Algorithms.Search;
 
 /// <inheritdoc cref="BinarySearcher" />
 public class RecursiveBinarySearcher : ISearchAlgorithm

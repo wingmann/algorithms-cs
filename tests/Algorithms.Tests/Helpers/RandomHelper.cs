@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace Algorithms.Tests.Helpers;
+namespace Wingmann.Algorithms.Tests.Helpers;
 
 internal static class RandomHelper
 {

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Comparison.Internal;
+﻿namespace Wingmann.Algorithms.Sorting.Comparison.Internal;
 
 /// <summary>
 /// handling gallop merges, allows for tracking array indexes and wins.

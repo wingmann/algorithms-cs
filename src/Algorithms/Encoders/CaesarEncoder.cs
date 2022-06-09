@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Algorithms.Encoders;
+namespace Wingmann.Algorithms.Encoders;
 
 /// <summary>
 /// Implements encoder using caesar cypher.<br />

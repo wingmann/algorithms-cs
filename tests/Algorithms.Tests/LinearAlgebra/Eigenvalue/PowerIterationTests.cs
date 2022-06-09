@@ -1,9 +1,9 @@
-﻿using Algorithms.LinearAlgebra.Eigenvalue;
-using Extensions;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
+using Wingmann.Algorithms.Extentions;
+using Wingmann.Algorithms.LinearAlgebra.Eigenvalue;
 
-namespace Algorithms.Tests.LinearAlgebra.Eigenvalue;
+namespace Wingmann.Algorithms.Tests.LinearAlgebra.Eigenvalue;
 
 public static class PowerIterationTests
 {

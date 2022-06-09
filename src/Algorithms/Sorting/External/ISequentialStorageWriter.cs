@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.External;
+﻿namespace Wingmann.Algorithms.Sorting.External;
 
 public interface ISequentialStorageWriter<in T> : IDisposable
 {

@@ -1,9 +1,9 @@
-﻿using Algorithms.Sequences;
+﻿using System.Numerics;
 using FluentAssertions;
 using NUnit.Framework;
-using System.Numerics;
+using Wingmann.Algorithms.Sequences;
 
-namespace Algorithms.Tests.Sequences;
+namespace Wingmann.Algorithms.Tests.Sequences;
 
 public static class FibonacciSequenceTests
 {

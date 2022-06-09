@@ -1,6 +1,6 @@
-﻿using Extensions;
+﻿using Wingmann.Algorithms.Extentions;
 
-namespace Algorithms.LinearAlgebra.Eigenvalue;
+namespace Wingmann.Algorithms.LinearAlgebra.Eigenvalue;
 
 /// <summary>
 /// Implements power iteration algorithm.<br />

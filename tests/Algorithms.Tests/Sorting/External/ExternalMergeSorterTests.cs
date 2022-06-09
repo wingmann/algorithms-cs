@@ -1,10 +1,10 @@
-﻿using Algorithms.Sorting.External;
-using Algorithms.Sorting.External.Storages;
-using Algorithms.Tests.Helpers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using NUnit.Framework.Internal;
+using Wingmann.Algorithms.Sorting.External;
+using Wingmann.Algorithms.Sorting.External.Storages;
+using Wingmann.Algorithms.Tests.Helpers;
 
-namespace Algorithms.Tests.Sorting.External;
+namespace Wingmann.Algorithms.Tests.Sorting.External;
 
 public static class ExternalMergeSorterTests
 {

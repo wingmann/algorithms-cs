@@ -1,8 +1,8 @@
-﻿using Algorithms.Sorting.Strings;
-using Algorithms.Tests.Helpers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Wingmann.Algorithms.Sorting.Strings;
+using Wingmann.Algorithms.Tests.Helpers;
 
-namespace Algorithms.Tests.Sorting.Strings;
+namespace Wingmann.Algorithms.Tests.Sorting.Strings;
 
 public static class MsdRadixStringSorterTests
 {

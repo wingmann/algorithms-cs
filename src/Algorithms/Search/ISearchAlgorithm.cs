@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Search;
+﻿namespace Wingmann.Algorithms.Search;
 
 /// <summary>
 /// Common interface of most search algorithms.

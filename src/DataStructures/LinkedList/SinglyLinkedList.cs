@@ -1,6 +1,6 @@
-﻿using DataStructures.LinkedList.Internal;
+﻿using Wingmann.DataStructures.LinkedList.Internal;
 
-namespace DataStructures.LinkedList;
+namespace Wingmann.DataStructures.LinkedList;
 
 public class SinglyLinkedList<T>
 {

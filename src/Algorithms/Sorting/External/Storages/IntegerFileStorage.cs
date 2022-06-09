@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.External.Storages;
+﻿namespace Wingmann.Algorithms.Sorting.External.Storages;
 
 public class IntegerFileStorage : ISequentialStorage<int>
 {

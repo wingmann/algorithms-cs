@@ -1,7 +1,7 @@
-﻿using Algorithms.Strings;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Wingmann.Algorithms.Strings;
 
-namespace Algorithms.Tests.Strings;
+namespace Wingmann.Algorithms.Tests.Strings;
 
 public static class BoyerMooreTests
 {

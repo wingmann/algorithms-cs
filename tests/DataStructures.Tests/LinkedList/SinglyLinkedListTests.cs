@@ -1,8 +1,8 @@
 ﻿using System.Collections;
-using DataStructures.LinkedList;
 using NUnit.Framework;
+using Wingmann.DataStructures.LinkedList;
 
-namespace DataStructures.Tests.LinkedList;
+namespace Wingmann.DatStuctures.Tests.LinkedList;
 
 public static class SinglyLinkedListTests
 {

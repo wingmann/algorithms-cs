@@ -1,4 +1,4 @@
-namespace Algorithms.Sorting.Comparison.QuickSorters;
+namespace Wingmann.Algorithms.Sorting.Comparison.QuickSorters;
 
 /// <summary>
 /// Implements quicksort algorithm.

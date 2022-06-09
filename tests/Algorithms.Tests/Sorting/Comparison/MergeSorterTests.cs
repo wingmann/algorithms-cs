@@ -1,8 +1,8 @@
-﻿using Algorithms.Sorting.Comparison;
-using Algorithms.Tests.Helpers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Wingmann.Algorithms.Sorting.Comparison;
+using Wingmann.Algorithms.Tests.Helpers;
 
-namespace Algorithms.Tests.Sorting.Comparison;
+namespace Wingmann.Algorithms.Tests.Sorting.Comparison;
 
 /// <summary>
 /// Class for testing merge sorter algorithm.

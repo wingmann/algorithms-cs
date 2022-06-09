@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Strings;
+﻿namespace Wingmann.Algorithms.Strings;
 
 /// <summary>
 /// Implements Boyer-Moore string search algorithm.

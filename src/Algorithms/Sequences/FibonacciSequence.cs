@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace Algorithms.Sequences;
+namespace Wingmann.Algorithms.Sequences;
 
 /// <summary>
 /// Implements fibonacci sequence algorithm.

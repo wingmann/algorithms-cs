@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Strings;
+﻿namespace Wingmann.Algorithms.Strings;
 
 /// <summary>
 /// Implements Knuth–Morris–Pratt string search algorithm.

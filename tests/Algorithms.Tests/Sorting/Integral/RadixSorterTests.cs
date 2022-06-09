@@ -1,8 +1,8 @@
-﻿using Algorithms.Sorting.Integral;
-using Algorithms.Tests.Helpers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Wingmann.Algorithms.Sorting.Integral;
+using Wingmann.Algorithms.Tests.Helpers;
 
-namespace Algorithms.Tests.Sorting.Integral;
+namespace Wingmann.Algorithms.Tests.Sorting.Integral;
 
 public static class RadixSorterTests
 {

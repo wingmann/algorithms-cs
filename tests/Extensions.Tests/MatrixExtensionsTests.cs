@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
 
-namespace Extensions.Tests;
+namespace Wingmann.Algorithms.Extentions.Tests;
 
 public class MatrixExtensionsTests
 {

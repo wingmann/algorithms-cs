@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Strings;
+﻿namespace Wingmann.Algorithms.Sorting.Strings;
 
 /// <summary>
 /// Implements most significant digit radix string sorting algorithm.

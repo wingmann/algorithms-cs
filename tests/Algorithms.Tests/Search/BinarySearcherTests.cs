@@ -1,8 +1,8 @@
-﻿using Algorithms.Search;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using NUnit.Framework.Internal;
+using Wingmann.Algorithms.Search;
 
-namespace Algorithms.Tests.Search;
+namespace Wingmann.Algorithms.Tests.Search;
 
 public static class BinarySearcherTests
 {

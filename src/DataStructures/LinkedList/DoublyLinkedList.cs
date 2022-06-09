@@ -1,6 +1,6 @@
-﻿using DataStructures.LinkedList.Internal;
+﻿using Wingmann.DataStructures.LinkedList.Internal;
 
-namespace DataStructures.LinkedList;
+namespace Wingmann.DataStructures.LinkedList;
 
 /// <summary>
 /// Similar to a Singly Linked List but each node contains a reference to the previous node in the list.

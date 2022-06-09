@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Integral.Interfaces;
+﻿namespace Wingmann.Algorithms.Sorting.Integral.Interfaces;
 
 /// <summary>
 /// Sorts array of integers without comparing them.

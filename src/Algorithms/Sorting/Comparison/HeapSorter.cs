@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Comparison;
+﻿namespace Wingmann.Algorithms.Sorting.Comparison;
 
 /// <summary>
 /// Heap sort is a comparison based sorting technique based on binary heap data structure.

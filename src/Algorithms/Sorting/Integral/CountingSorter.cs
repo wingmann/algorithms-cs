@@ -1,6 +1,6 @@
-﻿using Algorithms.Sorting.Integral.Interfaces;
+﻿using Wingmann.Algorithms.Sorting.Integral.Interfaces;
 
-namespace Algorithms.Sorting.Integral;
+namespace Wingmann.Algorithms.Sorting.Integral;
 
 /// <summary>
 /// Implements counting sorting algorithm.

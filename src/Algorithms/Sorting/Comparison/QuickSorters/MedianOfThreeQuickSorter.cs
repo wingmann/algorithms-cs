@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Comparison.QuickSorters;
+﻿namespace Wingmann.Algorithms.Sorting.Comparison.QuickSorters;
 
 /// <summary>
 /// Sorts arrays using quicksort (selecting median of three as a pivot).

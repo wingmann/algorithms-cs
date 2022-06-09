@@ -1,8 +1,8 @@
-﻿using Algorithms.Sorting.Comparison.Additional;
-using Algorithms.Tests.Helpers;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Wingmann.Algorithms.Sorting.Comparison.Additional;
+using Wingmann.Algorithms.Tests.Helpers;
 
-namespace Algorithms.Tests.Sorting.Comparison;
+namespace Wingmann.Algorithms.Tests.Sorting.Comparison;
 
 public static class PancakeSorterTests
 {

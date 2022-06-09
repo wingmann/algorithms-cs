@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Sorting.Comparison.Additional;
+﻿namespace Wingmann.Algorithms.Sorting.Comparison.Additional;
 
 /// <summary>
 /// Implements cocktail sorting algorithm.

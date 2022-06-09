@@ -1,8 +1,8 @@
-﻿using Algorithms.Search;
-using FluentAssertions;
+﻿using FluentAssertions;
 using NUnit.Framework;
+using Wingmann.Algorithms.Search;
 
-namespace Algorithms.Tests.Search;
+namespace Wingmann.Algorithms.Tests.Search;
 
 public static class JumpSearcherTests
 {

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Tests.Helpers;
+﻿namespace Wingmann.Algorithms.Tests.Helpers;
 
 public class IntegralComparer : IComparer<int>
 {

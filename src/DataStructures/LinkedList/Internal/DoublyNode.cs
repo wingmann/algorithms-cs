@@ -1,4 +1,4 @@
-﻿namespace DataStructures.LinkedList.Internal;
+﻿namespace Wingmann.DataStructures.LinkedList.Internal;
 
 public class DoublyNode<T>
 {
